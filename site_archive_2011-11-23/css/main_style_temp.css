@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	background:url(../images/page/IEWL_head_stretcher.jpg) repeat-x #FFFFFF;
+	padding:0;
+	margin:0;
+	font-family:Helvetica, Geneva, Arial, sans-serif;
+	font-size:14px;
+	color:#666666;
+	}
+div {
+	padding:0;
+	margin:0;
+	border:none;
+	}
+h1 {
+	color:#71BCE2;
+	font-size:30px;
+	text-align:right;
+	padding:0;
+	margin:10px 0 0 0;
+	}
+h2 {
+	color:#7DA33E;
+	font-size:20px;
+	text-align:left;
+	margin:20px 0 5px 0;
+	padding:0;
+	}
+.header_main {
+	width:100%;
+	height:275px;
+	min-width:1000px;
+	float:left;
+}
+.header_left {
+	background:url(../images/page/IEWL_header_left.jpg) no-repeat #FFFFFF;
+	float:left;
+	width:275px;
+	height:275px;
+	}
+.header_left h1 {
+	text-indent:-1000;
+	display:none;
+	}
+.slideshow {
+	background:url(../images/page/IEWL_slideshow_bg.jpg) no-repeat #FFFFFF;
+	float:right;
+	width:405px;
+	height:275px;
+	}
+.slideshow img {
+	position:absolute;
+	top:38px;
+	right:0px;
+	}
+.cmwl {
+	position:absolute;
+	top:250px;
+	left:10px;
+	}
+.cmwl h2 {
+	font-size:12px;
+	font-weight:normal;
+	padding:0;
+	margin:0;
+	}
+.content_wrapper {
+	background:url(../images/page/IEWL_content_wrapper_bg.gif) repeat-x #FFFFFF;
+	width:100%;
+	min-width:1000px;
+	float:left;
+	clear:left;
+	}
+.gutter_left {
+	background:url(../images/page/IEWL_gutter_left_bg.gif) repeat-y #FFFFFF;
+	float:left;
+	width:170px;
+	min-height:400px;
+	}
+.gutter_left_top {
+	background:url(../images/page/IEWL_gutter_left_top.gif) no-repeat #FFFFFF;
+	float:left
+	width:170px;
+	height:128px;
+	}
+.content {
+	margin:0 auto;
+	float:left;
+	width:700px;
+	}
+.gutter_right {
+	background:url(../images/page/IEWL_gutter_right_bg.gif) no-repeat #FFFFFF;
+	width:125px;
+	height:340px;
+	float:right;
+	clear:none;
+	}

@@ -1,0 +1,332 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	background:url(../images/graphics/IEWL_head_stretcher.jpg) repeat-x #FFFFFF;
+	padding:0;
+	margin:0;
+	font-family:Helvetica, Geneva, Arial, sans-serif;
+	font-size:12px;
+	color:#666666;
+	}
+div {
+	padding:0;
+	margin:0;
+	border:none;
+	}
+.ieFix_for_AP {
+	/*this is a dummy div*/
+	}
+h1 {
+	color:#71BCE2;
+	font-size:24px;
+	text-align:left;
+	padding:0;
+	letter-spacing:.05em;
+	margin:0 0 10px 0;
+	}
+h2 {
+	color:#7DA33E;
+	font-size:18px;
+	letter-spacing:1px;
+	text-align:left;
+	margin:10px 0;
+	padding:0;
+	float:none;
+	clear:both;
+	}
+img {
+	border:none;
+	}
+.logo_text {
+/*	background:url(../images/graphics/IEWL_logo_text.jpg) no-repeat #FFFFFF;*/
+	width:600px;
+	height:60px;
+	position:absolute;
+	top:10px;
+	left:30px;
+	z-index:20;
+	}
+
+.logo_text h1 {font-size:45px; letter-spacing:0.5px; margin:0; padding:0;
+	text-shadow:#fff 0px 2px 0px;
+	}
+.logo_text h2 {color:#71BCE2; font-weight:normal;  margin:0; padding:0;}	
+
+.logo_text a img {
+	border:none;
+	margin:0;
+	padding:0;
+	}
+.header_main {
+	background:none;
+	height:225px;
+	min-width:1000px;
+	width:100%;
+	float:left;
+	width:expression(document.body.clientWidth < 1002 ? "1000px" : "100%" );
+}
+.header_left {
+	/*background:url(../images/graphics/IEWL_logo.jpg) no-repeat #FFFFFF;*/
+	float:left;
+	width:550px;
+	height:auto;
+	margin:160px 0 0 30px;
+	}
+.header_left a img, .header_main a img {
+	border:none;
+	margin:0;
+	padding:0;
+	}
+	
+.header_main h1, .header_left h1 {
+	color:#fff;
+	font-size:30px;
+	/*text-indent:-1000px;
+	display:none;
+	font-size:0px;
+	*/
+	}
+#slideshow {
+	background:url(../images/graphics/IEWL_slideshow_bg.jpg) no-repeat #FFFFFF;
+	float:right;
+	width:405px;
+	height:225px;
+	padding:0;
+	margin:0;
+	border:none;
+	overflow:hidden;
+	}
+.cmwl {
+	position:absolute;
+	top:245px;
+	left:10px;
+	z-index:40;
+	}
+.cmwl h2 {
+	font-size:12px;
+	font-weight:normal;
+	letter-spacing:normal;
+	padding:0;
+	margin:0;
+	}
+.navigation {
+	background:none;/*
+	position:absolute;*/
+	height:auto;/*
+	top:219px;
+	left:230px;
+	z-index:100;*/
+	}
+.navigation ul {
+	display:block;
+	padding:0;
+	margin:0;
+	}
+.navigation ul li {
+	font-family:Helvetica, Geneva, Arial, sans-serif;
+	color:#71BCE2;
+	font-size:14px;
+	padding:0;
+	margin: 0;
+	display: block;
+	float: left;
+	}
+.navigation ul li a {
+	font-family:Helvetica, Geneva, Arial, sans-serif;
+	color:#eeffff;
+/*	color:#7DA33E;*/
+	text-decoration: none;
+	text-indent: 0px;
+	font-weight: normal;
+	margin: 0;
+	padding: 0 15px 0 10px;
+	border:none;
+	}
+.navigation ul li a:hover, .navigation ul li a.active {
+	color:#fff;
+	text-shadow:#000 0px 1px 2px;
+	}
+.title_graphics_holder {
+	background:url(../images/graphics/IEWL_title_stretcher.jpg) repeat-x #FFFFFF;
+	float:left;
+	clear:left;
+	min-width:1000px;
+	width:100%;
+	height:90px;
+	width:expression(document.body.clientWidth < 1002 ? "1000px" : "100%" );
+	}
+.title_graphics_left {
+	background:url(../images/graphics/IEWL_title_left.jpg) no-repeat #FFFFFF;
+	float:left;
+	height:90px;
+	width:166px;
+	}
+.title {
+	/*background:url(../images/graphics/IEWL_title_stretcher.jpg) repeat-x #FFFFFF;*/
+	background:none;
+	float:left;
+	width:68%;
+	height:90px;
+	}
+.title h1 {
+	text-align:right;
+	font-size:24px;
+	/*float:left;*/
+	margin:26px 0 0 0;
+	}
+.title_graphics_right {
+	/*background:url(../images/graphics/IEWL_title_stretcher.jpg) repeat-x #FFFFFF;*/
+	background:url(../images/graphics/IEWL_title_right.jpg) no-repeat #FFFFFF;
+	float:right;
+/*	width:auto;*/
+	width:120px;
+	height:90px;
+	}
+.title_graphics_right h1 {
+	text-align:right;
+	font-size:24px;
+	float:left;
+	margin:20px 10px 0 0;
+	}
+.content_wrapper {
+	background:url(../images/graphics/IEWL_content_stretcher.gif) repeat-y #FFFFFF;
+	width:100%;
+	min-width:1000px;
+	float:left;
+	clear:left;
+	width:expression(document.body.clientWidth < 1002 ? "1000px" : "100%" );
+	}
+.content_spacer_ieFix {
+	background:url(../images/graphics/IEWL_content_stretcher.gif) repeat-y #FFFFFF;
+	float:left;
+	width:200px;
+	height:100px;
+	}
+#content {
+	width:70%;
+	float:left;
+	margin:0 0 20px 0;
+	}
+#content h2, #content h1 {
+	clear:left;
+	}
+#content p {
+	line-height:1.3em;
+	padding:0;
+	margin:0 0 10px 20px;
+	}
+#content a {
+	color:#7DA33E;
+	text-decoration:none;
+	font-weight:bold;
+	}
+#content a:hover {
+	color:#333333;
+	}
+#content #writeme a {
+	font-weight:normal;
+	}
+#content img {
+	float:left;
+	padding:5px;
+	margin:0 20px 20px 0;
+	border:solid;
+	border-width:1px;
+	border-color:#7DA33E;
+	}
+#content h2.signature {
+	font-size:14px;
+	font-weight:normal;
+	color:#7DA33E;
+	text-align:left;
+	font-weight:bold;
+	margin:10px 0 5px 0;
+	}
+#content .divider {
+	background:url(../images/graphics/IEWL_divider.gif) repeat-x #FFFFFF;
+	width:100%;
+	height:10px;
+	float:left;
+	clear:both;
+	}
+.content_right {
+	background:url(../images/graphics/IEWL_logo_side.gif) no-repeat #FFFFFF;
+	/*width:25px;
+	height:365px;*/
+	width:32px;
+	height:470px;
+	float:right;
+	clear:none;
+	}
+.footer_holder {
+	background:url(../images/graphics/IEWL_footer_stretcher.jpg) repeat-x #FFFFFF;
+	font-family:Helvetica, Geneva, Arial, sans-serif;
+	color:#7DA33E;
+	font-size:12px;
+	width:100%;
+	height:75px;
+	min-width:1000px;
+	float:left;
+	clear:both;
+	width:expression(document.body.clientWidth < 1002 ? "1000px" : "100%" );
+	}
+.footer_holder p {
+	color:#71BCE2;
+	clear:left;
+	margin:0 0 0 10px;
+	}
+.footer_holder a {
+	text-decoration:none;
+	color:#71BCE2;
+	text-align:right;
+	}
+.footer_holder a:hover {
+	color:#7DA33E;
+	}
+.footer_left {
+	background:url(../images/graphics/IEWL_footer_left.jpg) no-repeat #FFFFFF;
+	width:230px;
+	height:75px;
+	float:left;
+	}
+.footer {
+	background:none;
+	font-size:12px;
+	width:auto;
+	float:left;
+	}
+.footer ul {
+	display:block;
+	padding:25px 0 0 0;
+	margin:0;
+	}
+.footer ul li {
+	font-family:Helvetica, Geneva, Arial, sans-serif;
+	color:#71BCE2;
+	font-size:14px;
+	padding:0;
+	margin: 0;
+	display: block;
+	float: left;
+	}
+.footer ul li a {
+	font-family:Helvetica, Geneva, Arial, sans-serif;
+	color:#7DA33E;
+	text-decoration: none;
+	text-indent: 0px;
+	font-weight: normal;
+	margin: 0;
+	padding: 0 15px 0 10px;
+	border:none;
+	}
+.footer ul li a:hover {
+	color:#71BCE2;
+	}
+/* IE6 eyes only \*/
+* html #slideshow {
+	margin-left:-3px;
+	}
+* html .title_graphics_right {
+	margin-right:-3px;
+	}
+/* end hide */

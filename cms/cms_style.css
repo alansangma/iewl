@@ -1,0 +1,65 @@
+/* temporary stylesheet */
+
+body {
+	font-family: sans-serif;
+	background: #333;
+	color: #fff;
+}
+
+h1, h2 {
+	color: #999;
+}
+
+a {
+	color: #fff;
+}
+
+#content {
+	width: 85%;
+	padding: 0px 9px 0px 9px;
+	margin-left: 15px;
+}
+
+.service_title {
+	font-weight: bold;
+}
+
+.service_description {
+	font-size: smaller;
+}
+
+#edittable {
+}
+
+#edittable table {
+}
+
+#edittable tr {
+	border: 1px #fff dashed;
+}
+
+#edittable th {
+}
+
+#edittable td {
+	vertical-align: top;
+	font-size: small;
+	padding: 6px;
+	color: #fff;
+}
+
+#reordertable td {
+	vertical-align: top;
+	font-size: small;
+	padding: 6px;
+}
+
+.visible {
+	background: #666;
+	color: #fff;
+}
+
+.invisible {
+	background: #444;
+	color: #666;
+}

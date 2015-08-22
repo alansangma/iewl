@@ -1,0 +1,2 @@
+AuthName "cms"
+AuthUserFile "/home/cknopke/.htpasswds/public_html/cms/passwd"
