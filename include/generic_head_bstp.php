@@ -25,7 +25,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
 <!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> -->
 
 <link rel="stylesheet" type="text/css" href="./css/screen.css" />
 <link rel="stylesheet" type="text/css" href="./css/style-bstp.css" />
@@ -35,10 +35,7 @@
 
 <!--////////////////////////////////////////////////////////////-->
 <!--                         SCRIPTS                            -->
-<!-- <script type="text/javascript" language="javascript" src="./scripts/jquery-1.6.2.min.js"></script> -->
 <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<!-- <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
-<!-- <script type="text/javascript" language="javascript" src="./scripts/jquery.pngFix.js"></script> -->
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 

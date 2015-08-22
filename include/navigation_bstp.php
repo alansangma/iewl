@@ -11,7 +11,7 @@
 	$subCount = 1;
 	foreach ($pages as $pageName=>$url) {
 	 
-		$activeClass = ((strpos($php_self, $url) && !$is_footer) ? 'active' : '');
+		$activeClass = ((strpos($php_self, $url)) ? 'active' : '');
 		//$dropdownCount = 0;
 		
 		$anchorString = ((strpos($php_self, $url)) ? '' : $url );

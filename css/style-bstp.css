@@ -40,12 +40,32 @@ h4 {
 
 .nav>li>a {
     padding: 15px 10px;
+    line-height: 1.2rem;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+	background: none;
+	/*text-decoration:overline*/;
+}
+
+.nav>li.active>a {
+	text-shadow: 0 1px 0px rgba(0,0,0, 0.5);
 }
 
 ul.dropdown-menu li {
     margin-left: 0;
 }
 
+ul.dropdown-menu li a:hover {
+	background: #74c5ed;
+	color: #fff;
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+	background-color: #74c5ed;
+	/* border-color: #337ab7; */
+	color: #fff;
+}
 img {
     max-width: 100%;
 }

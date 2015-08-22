@@ -761,7 +761,7 @@ p.no_left_margin {
 	text-align:center;
 	
 	
-	text-shadow:#000 0px 1px 2px;
+	/*text-shadow:#000 0px 1px 2px;*/
 	opacity:0.85;
 	}
 .slide div a:hover {

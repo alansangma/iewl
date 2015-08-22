@@ -3,7 +3,11 @@ include_once('./include/init.php');
 include_once('./include/generic_head_bstp.php');
 /*
 2015-08-15: 2 hours
-Index page and responsive
+- Index page and responsive
+
+2015-08-22: 2 hours
+- Index page fixes
+- weight-loss.php made responsive
 */
 ?>
 <body>
