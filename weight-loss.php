@@ -9,7 +9,7 @@ include_once('./include/generic_head_bstp.php');
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h2>Our Weight Loss Program</h2>
+        <h2 class="iewl-page-header">Our Weight Loss Program</h2>
         <a href="#forms">&darr; Jump to Forms</a>
       </div>
     </div>
