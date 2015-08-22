@@ -60,27 +60,13 @@ Index page and responsive
   <!-- CONTAINER -->
   <div class="container">
     <div class="row">
-      <div class="col-md-5 home_copy">
-        <h2>Welcome.</h2>
-        <p>We offer a physician supervised medical weight loss program to help you achieve a healthy weight.  The weight loss program uses a combination of high quality meal replacement products, appetite suppressants, exercise</p>
-        <p>therapy, medication management, and dietary guidance to help you achieve your goals.  We have flexible scheduling with morning, noon, and early evening appointments available for your convenience.</p>
-      </div>
-      <div class="clear tall_40 visible-sm visible-xs"></div>
       <div class="col-md-5">
-        <h3>Memberships</h3>
-        <a href="http://asbp.org/siterun_data/about_asbp/" title="American Society of Bariatric Physicians" href="http://asbp.org">
-        <img src="http://dev.asbp.org/images/badges/absp.120x120.png" alt="ASBP.org" style="border:none;" src="images/badges/absp.120x120.png" style="border: none;" /></a>
-        <ul style="margin-top:20px;">
-          <li>Member:  <a href="https://www.asbp.org/" title="American Society of Bariatric Physicians" target="_blank">American Society of Bariatric Physicians</a></li>
-          <li>Member:  <a href="http://www.obesityaction.org/obesity-treatments/find-a-physician-or-surgeon" title="OAC Find a Physician Page" targe="_blank">Obesity Action Coalition</a></li>
-          <li>Member:  <a href="http://overcomeobesitynow.org/" title="NOON external page link" target="_blank">Network to Overcome Obesity Now</a></li>
-          <li>Member:  <a href="http://www.aafp.org/online/en/home.html" title="AAFP external page link" target="_blank">American Academy of Family Physicians</a></li>
-          <li><a href="people.php#recognition" title="See more memberships and certifications">More &rarr;</a></li>
-        </ul>
-        
+        <h2>Welcome.</h2>
+        <p class="lead">We offer a physician supervised medical weight loss program to help you achieve a healthy weight.  The weight loss program uses a combination of high quality meal replacement products, appetite suppressants, exercise therapy, medication management, and dietary guidance to help you achieve your goals.</p>
+        <p class="lead">We have flexible scheduling with morning, noon, and early evening appointments available for your convenience.</p>
       </div>
-      <div class="clear tall_40 visible-sm visible-xs"></div>
-      <div class="col-md-2">
+      <div class="clear tall_20 visible-sm visible-xs"></div>
+       <div class="col-md-2 col-md-push-5">
         <a style='display:block;' href='http://www.zocdoc.com/practice/raincross-medical-group-27734?lock=true&isNewPatient=false&referrerType=Widget'>
         <img src='graphics/ZocDocApptButtonSmMed.png' border='0' /></a>
         <a style='display:block; position: relative; ' href='http://www.zocdoc.com' title='Powered by ZocDoc Doctor Directory'>
@@ -115,10 +101,26 @@ Index page and responsive
         </table>
         <p style="color:#308fbf;font-size:10px;">We schedule during lunch on Mondays and Tuesdays!</p>
       </div>
+      <div class="clear tall_40 visible-sm visible-xs"></div>
+      <div class="col-md-5 col-md-pull-2">
+        <h3>Memberships</h3>
+        <a href="http://asbp.org/siterun_data/about_asbp/" title="American Society of Bariatric Physicians" href="http://asbp.org">
+        <img src="http://dev.asbp.org/images/badges/absp.120x120.png" alt="ASBP.org" style="border:none;" src="images/badges/absp.120x120.png" style="border: none;" /></a>
+        <ul style="margin-top:20px;">
+          <li>Member:  <a href="https://www.asbp.org/" title="American Society of Bariatric Physicians" target="_blank">American Society of Bariatric Physicians</a></li>
+          <li>Member:  <a href="http://www.obesityaction.org/obesity-treatments/find-a-physician-or-surgeon" title="OAC Find a Physician Page" targe="_blank">Obesity Action Coalition</a></li>
+          <li>Member:  <a href="http://overcomeobesitynow.org/" title="NOON external page link" target="_blank">Network to Overcome Obesity Now</a></li>
+          <li>Member:  <a href="http://www.aafp.org/online/en/home.html" title="AAFP external page link" target="_blank">American Academy of Family Physicians</a></li>
+          <li><a href="people.php#recognition" title="See more memberships and certifications">More &rarr;</a></li>
+        </ul>
+        
+      </div>
+      
+     
     </div>
     <div class="clear tall_40"></div>
     <div class="row">
-      <div class="col-md-5 iewl-certs">
+      <div class="col-md-5 col-md-push-5 iewl-certs">
         <h3>Certifications</h3>
         <a title="American Board of Obesity Medicine" href="http://abom.org"> <img title="American Board of Obesity Medicine - Certified Diplomate"
         src="http://abom.org/wp-content/uploads/ABOM_DIPLOMATE_BADGE_small.jpg" alt="American Board of Obesity Medicine - Certified Diplomate" /> </a>
@@ -127,7 +129,7 @@ Index page and responsive
         src="https://www.theabfm.org/_images/logo_abfm.gif"  alt="American Board of Family Medicine - Diplomate" /> </a>
       </div>
       <div class="clear tall_40 visible-sm visible-xs"></div>
-      <div class="col-md-5 iewl-social">
+      <div class="col-md-5 col-md-pull-5 iewl-social">
         <h3>Our Social Network</h3>
         <ul>
           <li><a href="http://www.facebook.com/pages/Inland-Empire-Weight-Loss/151698548219925" title="Like us on Facebook" target="_blank" class="facebook_home">Like us on Facebook!</a></li>
