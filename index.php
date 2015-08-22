@@ -1,60 +1,54 @@
 <?php
 include_once('./include/init.php');
 include_once('./include/generic_head_bstp.php');
-
 /*
 2015-08-15: 2 hours
 Index page and responsive
-
 */
 ?>
 <body>
-    <?php
-    //echo 'USER AGENT : '.$user_agent. ' :::: is IE: ' . $is_ie;
-    include_once('./include/generic_page_top_bstp.php');
-    //$style = !$is_ie7 ? '' : ' style="position:absolute; width:100%; bottom:0; left:0; background:url(./graphics/ffffff-70per.png) repeat; text-align:center;padding:5px 0;"';
-    ?>
-
+  <?php
+  include_once('./include/generic_page_top_bstp.php');
+  ?>
   <div class="container-fluid carousel-container">
-
-      <div class="carousel slide carousel-fade" id="iewlCarousel" data-ride="carousel" data-interval="5000">
-        <ol class="carousel-indicators hidden-xs">
-          <li data-target="#iewlCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#iewlCarousel" data-slide-to="1"></li>
-          <li data-target="#iewlCarousel" data-slide-to="2"></li>
-          <li data-target="#iewlCarousel" data-slide-to="3"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="item active">
-            <img src="images/slideshow/woman_front.jpg" alt="Healthy and Happy Woman">
-            <div class="carousel-caption iewl-carousel-caption">
-              <h3><a href="tools.php#bmi" title="Check Your BMI">Check Your BMI</a></h3>
-              <a class="hidden-sm hidden-xs" href="tools.php#bmi" title="Check Your BMI">Get Started</a>
-            </div>
+    <div class="carousel slide carousel-fade" id="iewlCarousel" data-ride="carousel" data-interval="5000">
+      <ol class="carousel-indicators hidden-xs">
+        <li data-target="#iewlCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#iewlCarousel" data-slide-to="1"></li>
+        <li data-target="#iewlCarousel" data-slide-to="2"></li>
+        <li data-target="#iewlCarousel" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="images/slideshow/woman_front.jpg" alt="Healthy and Happy Woman">
+          <div class="carousel-caption iewl-carousel-caption">
+            <h3><a href="tools.php#bmi" title="Check Your BMI">Check Your BMI</a></h3>
+            <a class="hidden-sm hidden-xs" href="tools.php#bmi" title="Check Your BMI">Get Started</a>
           </div>
-          <div class="item">
-            <img src="images/slideshow/forks.jpg" alt="Healthy and Happy Woman">
-            <div class="carousel-caption iewl-carousel-caption">
-              <h3><a href="weight-loss.php" title="Learn About the Weight Loss Process">Learn About the Weight Loss Process</a></h3>
-              <a class="hidden-sm hidden-xs" href="weight-loss.php" title="Learn About the Weight Loss Process">Get Started</a>
-            </div>
+        </div>
+        <div class="item">
+          <img src="images/slideshow/forks.jpg" alt="Healthy and Happy Woman">
+          <div class="carousel-caption iewl-carousel-caption">
+            <h3><a href="weight-loss.php" title="Learn About the Weight Loss Process">Learn About the Weight Loss Process</a></h3>
+            <a class="hidden-sm hidden-xs" href="weight-loss.php" title="Learn About the Weight Loss Process">Get Started</a>
           </div>
-          <div class="item">
-            <img src="images/slideshow/woman_side.jpg" alt="Healthy and Happy Woman">
-            <div class="carousel-caption iewl-carousel-caption">
-              <h3><a href="people.php#staff" title="Meet Our Bariatric Professionals">Meet Our Bariatric Professionals</a></h3>
-              <a class="hidden-sm hidden-xs" href="people.php#staff" title="Meet Our Bariatric Professionals">Get Started</a>
-            </div>
+        </div>
+        <div class="item">
+          <img src="images/slideshow/woman_side.jpg" alt="Healthy and Happy Woman">
+          <div class="carousel-caption iewl-carousel-caption">
+            <h3><a href="people.php#staff" title="Meet Our Bariatric Professionals">Meet Our Bariatric Professionals</a></h3>
+            <a class="hidden-sm hidden-xs" href="people.php#staff" title="Meet Our Bariatric Professionals">Get Started</a>
           </div>
-          <div class="item">
-            <img src="images/slideshow/apple.jpg" alt="Healthy and Happy Woman">
-            <div class="carousel-caption iewl-carousel-caption">
-              <h3><a href="tools.php#ideal-weight" title="Find Your Ideal Body Weight">Find Your Ideal Body Weight</a></h3>
-              <a class="hidden-sm hidden-xs" href="tools.php#ideal-weight" title="Find Your Ideal Body Weight">Get Started</a>
-            </div>
+        </div>
+        <div class="item">
+          <img src="images/slideshow/apple.jpg" alt="Healthy and Happy Woman">
+          <div class="carousel-caption iewl-carousel-caption">
+            <h3><a href="tools.php#ideal-weight" title="Find Your Ideal Body Weight">Find Your Ideal Body Weight</a></h3>
+            <a class="hidden-sm hidden-xs" href="tools.php#ideal-weight" title="Find Your Ideal Body Weight">Get Started</a>
           </div>
         </div>
       </div>
+    </div>
   </div>
   <div class="clear tall_20"></div>
   <!-- CONTAINER -->
@@ -66,7 +60,7 @@ Index page and responsive
         <p class="lead">We have flexible scheduling with morning, noon, and early evening appointments available for your convenience.</p>
       </div>
       <div class="clear tall_20 visible-sm visible-xs"></div>
-       <div class="col-md-2 col-md-push-5">
+      <div class="col-md-2 col-md-push-5">
         <a style='display:block;' href='http://www.zocdoc.com/practice/raincross-medical-group-27734?lock=true&isNewPatient=false&referrerType=Widget'>
         <img src='graphics/ZocDocApptButtonSmMed.png' border='0' /></a>
         <a style='display:block; position: relative; ' href='http://www.zocdoc.com' title='Powered by ZocDoc Doctor Directory'>
@@ -116,7 +110,7 @@ Index page and responsive
         
       </div>
       
-     
+      
     </div>
     <div class="clear tall_40"></div>
     <div class="row">
@@ -145,37 +139,34 @@ Index page and responsive
   
   <!--////////////////////////////////////////-->
   <!--               FOOTER                   -->
-  <!-- <div class="hidden-sm hidden-xs"> -->
   <?php
   $is_footer = true;
-
   include('./include/navigation_bstp.php');
   ?>
-  <!-- </div> -->
   <!--               FOOTER                   -->
   <!--////////////////////////////////////////-->
   
-<!-- Google Code for Home Conversion Page -->
-<script type="text/javascript">
-/* <![CDATA[ */
-var google_conversion_id = 988072025;
-var google_conversion_language = "en";
-var google_conversion_format = "3";
-var google_conversion_color = "ffffff";
-var google_conversion_label = "tazWCI_A3QMQ2ZCT1wM";
-var google_conversion_value = 0;
-if (0.5) {
-google_conversion_value = 0.5;
-}
-/* ]]> */
-</script>
-<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
-</script>
-<noscript>
-<div style="display:inline;">
-  <img height="0" width="0" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/988072025/?value=0.5&amp;label=tazWCI_A3QMQ2ZCT1wM&amp;guid=ON&amp;script=0"/>
-</div>
-</noscript>
-<!-- End Google Conversion Code -->
+  <!-- Google Code for Home Conversion Page -->
+  <script type="text/javascript">
+  /* <![CDATA[ */
+  var google_conversion_id = 988072025;
+  var google_conversion_language = "en";
+  var google_conversion_format = "3";
+  var google_conversion_color = "ffffff";
+  var google_conversion_label = "tazWCI_A3QMQ2ZCT1wM";
+  var google_conversion_value = 0;
+  if (0.5) {
+  google_conversion_value = 0.5;
+  }
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+  </script>
+  <noscript>
+  <div style="display:inline;">
+    <img height="0" width="0" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/988072025/?value=0.5&amp;label=tazWCI_A3QMQ2ZCT1wM&amp;guid=ON&amp;script=0"/>
+  </div>
+  </noscript>
+  <!-- End Google Conversion Code -->
 </body>
 </html>
