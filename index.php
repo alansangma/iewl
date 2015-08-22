@@ -8,6 +8,7 @@ include_once('./include/generic_head_bstp.php');
 2015-08-22: 2 hours
 - Index page fixes
 - weight-loss.php made responsive
+- nav styles
 */
 ?>
 <body>
