@@ -1,7 +1,10 @@
 <?php
+$mysqli = new mysqli($dbhost, $dbuser, $dbpassword, $dbdatabase);
 $request = "SELECT title, body, post_url, timestamp FROM tumblr_".$user." ORDER BY timestamp DESC LIMIT 10;";
-$result = mysql_query($request) or die('<h2>failed to SELECT from tumblr_'.$user.' : </h2><p>'.mysql_error().'</p>');
-while($obj = mysql_fetch_object($result)) {
+//$result = mysqli_query($connection, $request) or die('<h2>failed to SELECT from tumblr_'.$user.' : </h2><p>'.mysql_error().'</p>');
+$result = $mysqli->query($request);
+//while($obj = mysql_fetch_object($result)) {
+while ($obj = $result->fetch_object()) {
 	$title = rawurldecode($obj->title);
 	$body = rawurldecode($obj->body);
 	
@@ -24,4 +27,6 @@ while($obj = mysql_fetch_object($result)) {
 	<hr>
 	';
 	}	
+	$result->close();
+$mysqli->close();
 ?>

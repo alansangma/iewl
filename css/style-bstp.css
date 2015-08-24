@@ -216,6 +216,16 @@ body {
 .carousel-fade .carousel-control {
     z-index: 2;
 }
+.tumblr-link {
+    text-align: center;
+}
+.tumblr-link a {
+    display: block;
+    /*width:50%;*/
+    /*background-size: contain;*/
+    /*float: left;*/
+    /*padding-bottom: 15%;*/
+}
 
 @media (max-width: 1310px) {
     .navbar {
