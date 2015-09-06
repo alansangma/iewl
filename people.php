@@ -1,9 +1,67 @@
 <?php
 include_once('./include/init.php');
-
-include_once('./include/generic_head.php');
-
+include_once('./include/generic_head_bstp.php');
 ?>
+
+<body>
+		<?php
+		include_once('./include/generic_page_top_bstp.php');
+		?>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="iewl-page-header">People</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<!-- //////////// -->
+				<!-- 	TAB NAV	 -->
+				<ul id="tabs" class="nav nav-tabs nav-justified" data-tabs="tabs">
+					<li id="staff-nav">
+						<a class="tab-nav-link" href="#staff-content" data-toggle="tab">People</a>
+					</li>
+					<li id="recognition-nav">
+						<a class="tab-nav-link" href="#recognition-content" data-toggle="tab">Recognition</a>
+					</li>
+					<li id="partners-nav">
+						<a class="tab-nav-link" href="#partners-content" data-toggle="tab">Partners</a>
+					</li>
+					<li id="success-stories-nav">
+						<a class="tab-nav-link" href="#success-stories-content" data-toggle="tab">Success Stories</a>
+					</li>
+				</ul>
+				<!-- 	TAB NAV	 -->
+				<!-- //////////// -->
+
+				<div class="clear tall_40"></div>
+				<?php require_once('include/config.php'); ?>
+				<div class="tab-content">
+					<div class="tab-pane" id="staff-content">
+						<?php include('tabbed-content/staff-content.php'); ?>
+					</div>
+					<div class="tab-pane" id="recognition-content">
+						<?php include('tabbed-content/recognition-content.php'); ?>
+					</div>
+					<div class="tab-pane" id="partners-content">
+						<?php include('tabbed-content/partners-content.php'); ?>
+					</div>
+					<div class="tab-pane" id="success-stories-content">
+						<?php include('tabbed-content/success-stories-content.php'); ?>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--////////////////////////////////////////-->
+	<!--               FOOTER                   -->
+	<?php
+	$is_footer = true;
+	include('./include/navigation_bstp.php');
+	?>
+	<!--               FOOTER                   -->
+	<!--////////////////////////////////////////-->
 
 <!-- Google Code for People Conversion Page -->
 <script type="text/javascript">
@@ -27,37 +85,13 @@ if (0.30) {
 </div>
 </noscript>
 <!-- End Google Code for People Conversion -->
+<script src="scripts/nav-tabs.js"></script>
+<script>
+	jQuery(document).ready(function($) {
+		initTabs('staff');
+	});
+</script>
 
-<body>
-<div class="container_12">
-<?php
-include_once('./include/generic_page_top.php');
-
-echo'
-	<div class="grid_12">
-     	<h2>People</h2>
-     </div>
-	<div class="clear tall_10"></div>
-';
-
-$ary = $people;
-
-include_once('./include/tabbed_content_core.php');
-?>
-
-
-
-     <!--////////////////////////////////////////-->
-     <!--               FOOTER                   -->
-<?php 
-$is_footer = true;
-include('./include/navigation.php');
-
-?>
-     <!--               FOOTER                   -->
-     <!--////////////////////////////////////////-->
-
-</div>
 </body>
 </html>
 <?php 

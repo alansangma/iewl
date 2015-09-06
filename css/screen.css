@@ -657,7 +657,7 @@ a.closer {
 
 h4.staff_h {
 	margin-left:0;
-	margin-bottom:0px;
+	margin-bottom:1rem;
 	
 	font-size:20px;
 }
@@ -665,9 +665,9 @@ h4.staff_h {
 /*----------------------------*/
 /*		PARTNERS			*/
 h4.partner_h {
-	margin-bottom:0;
+	/*margin-bottom:0;*/
 	font-size:18px;
-	line-height:0.8em;
+	/*line-height:0.8em;*/
 }
 
 a.partner_a {
@@ -691,7 +691,9 @@ a.partner_a {
 	text-align:center;
 }
 
-
+.before_after img {
+	width:100%;
+}
 .before_after h5 {
 	font-weight:normal;
 	font-size:30px;

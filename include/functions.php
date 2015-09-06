@@ -15,7 +15,13 @@ imagepng($img);
 
 
 function detectUrls($str) {
+	/*$return = preg_replace_callback("#((http|https|ftp)://(\S*?\.\S*?))(\s|\;|\)|\]|\[|\{|\}|,|\"|'|:|\<|$|\.\s)#ie", function($matches){
+		return "'<a href=\"$matches[1]\" target=\"_blank\">$matches[3]</a>$matches[4]'";
+	}, $str);
+	return $return;*/
 	return preg_replace("#((http|https|ftp)://(\S*?\.\S*?))(\s|\;|\)|\]|\[|\{|\}|,|\"|'|:|\<|$|\.\s)#ie", "'<a href=\"$1\" target=\"_blank\">$3</a>$4'", $str);
+
+
 }
 
 ?>

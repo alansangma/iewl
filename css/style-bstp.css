@@ -227,6 +227,12 @@ body {
     /*padding-bottom: 15%;*/
 }
 
+.thumbnail {
+    /*margin-top: 1rem;*/
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
 @media (max-width: 1310px) {
     .navbar {
         margin-bottom: 5px;

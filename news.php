@@ -40,7 +40,7 @@ include_once('./include/generic_head_bstp.php');
 						<?php 
 						//	ADD OFFICE NEWS CONTENT
 						$user = 'officenewsatiewl';
-						include('include/news-tab-content.php');
+						include('tabbed-content/news-tab-content.php');
 						?>
 						</div>
 					</div>
@@ -49,7 +49,7 @@ include_once('./include/generic_head_bstp.php');
 						<?php
 						//	ADD WEIGHTLOSS NEWS CONTENT
 						$user = 'inlandempireweightloss';
-						include('include/news-tab-content.php');
+						include('tabbed-content/news-tab-content.php');
 						?>
 						</div>
 					</div>
@@ -107,32 +107,12 @@ include_once('./include/generic_head_bstp.php');
 
 
 	
+	<script src="scripts/nav-tabs.js"></script>
 	<script>
 	jQuery(document).ready(function($) {
-		
-		
-		jQuery('.tab-nav-link').on('click', function(e){
-			e.preventDefault();
-			var new_hash = jQuery(this).attr('href');
-			new_hash = new_hash.substr(0, new_hash.indexOf('-content'));
-			window.location.hash = new_hash;
-
-		});
-		
-		jQuery(window).on('hashchange', function(e){
-			handleHash();
-		});
-
-		handleHash();
+		//defaultHash = ;
+		initTabs('office-news');
 	});
-	function handleHash() {
-		var hash = window.location.hash.substr(1);
-		hash = hash.length==0 ? 'office-news' : hash;
-		
-		jQuery('.active').removeClass('active');
-		jQuery('#'+hash+'-nav').addClass('active');
-		jQuery('#'+hash+'-content').addClass('active');
-	}
-</script>
+	</script>
 </body>
 </html>
