@@ -8,9 +8,6 @@ jQuery(document).ready(function($) {
 	$('#hipwaist_submit').click(function(){
 		calculateWaistHip();
 	});
-	// $('#sex').on('change', function(e){
-	// 	console.log('change');
-	// });
 });
 
 function showResult(elem, str, ok, font_size) {
@@ -31,7 +28,7 @@ function calculateBMI() {
 	var pounds = Math.abs(Number($('#pounds').val()));
 	
 	var bmi = Number(pounds / (inches * inches) * 703).toFixed(1);
-	console.log('*'+bmi);
+	//console.log('*'+bmi);
  	if(bmi.toString() != 'NaN') {
 		showResult('#bmi_result', bmi, true);
 	} else {
@@ -52,25 +49,26 @@ var frames = {
 	};
 
 function bindIdealWeight() {
-	//console.log('***');
+	////console.log('***');
 	$('.show_info').click(function(e){
 		e.preventDefault();
 		showInfo($(this));
 	});
-	$('.select_input').change(function(e){
+	$('#frame_size').change(function(e){
 		e.preventDefault();
-		if($('.select_input option:selected').val().indexOf('learn') >= 0) {
-			showInfo($('.select_input option:selected'));
+		if($('#frame_size option:selected').val().indexOf('learn') >= 0) {
+			showInfo($('#frame_size option:selected'));
 			$(this).val('select');
 			
 		}
 	});
+	$('#ideal_submit').click(initIdealWeightCalculation);
 }
 
 function initIdealWeightCalculation() {
-	var inches = Math.abs(Number($('#inches').val())) + feetToInches($('#feet').val());
+	var inches = Math.abs(Number($('#ideal_inches').val())) + feetToInches($('#ideal_feet').val());
 	var size = Number(frames[$('#frame_size').val()]);
-	var sex = $('#sex').val();
+	var sex = $('#ideal_sex').val();
 	
 	if(size != 'select' && sex != 'select') {
 		if(inches.toString() != 'NaN') {
@@ -114,13 +112,13 @@ function calculateIdealWeight(inches, size, sex) {
 	var min = (result - range).toFixed(0);
 	var max = (result + range).toFixed(0);
 	
-	showIdealResult(Math.round(result), min, max);
+	showIdealResult('#ideal_result', Math.round(result), min, max);
 	
 }
 
-function showIdealResult(ideal, min, max) {
+function showIdealResult(elem, ideal, min, max) {
 	$(elem).html('<div class="hidden_result" style="display:none;"><h3 style="margin-top:20px;">'+ideal+'</h3><p class="min_max_result">' + min + ' - ' + max + '</p></div>');
-	if(Number($(elem).css('opacity')) < 1) $(elem).css('opacity', '1');
+	/*if(Number($(elem).css('opacity')) < 1) */$(elem).css('opacity', '1');
 	$(elem).show();
 	$('.hidden_result').fadeIn();
 }
@@ -193,35 +191,35 @@ function bindBFC() {
 }
 
 function calculateBodyFatContent() {
-	var sex = $('#sex option:selected').text();
-	console.log('*sex '+sex);
+	var sex = $('#bfc_sex').val();
+	//console.log('*sex '+sex);
 	if(sex == 'MALE') {					//	MALE
 		var data = {
-			'weight' 	: Math.abs(Number($('#pounds').val())),
-			'feet' 	: Math.abs(Number($('#feet').val())),
-			'inches' 	: Math.abs(Number($('#inches').val())),
-			'waist'	: Math.abs(Number($('#waist').val())),
-			'neck' 	: Math.abs(Number($('#neck').val()))
+			'weight' 	: Math.abs(Number($('#bfc_pounds').val())),
+			'feet' 	: Math.abs(Number($('#bfc_feet').val())),
+			'inches' 	: Math.abs(Number($('#bfc_inches').val())),
+			'waist'	: Math.abs(Number($('#bfc_waist').val())),
+			'neck' 	: Math.abs(Number($('#bfc_neck').val()))
 		};
-		console.log(data.weight);
+		//console.log(data.weight);
 		var error = checkData(data);
-			console.log('e : ' + error);
+			//console.log('e : ' + error);
 		if(error !== true) {
 			//doMaleBFC(weight, waist);
 			doMaleBFC('#bodyfat_result', data);
 		} else {
-			console.log('male fail');
+			//console.log('male fail');
 			showResult('#bodyfat_result', 'Please enter all info.', false);
 		}
 		
 	} else if (sex == 'FEMALE') {				//	FEMALE
 		var data = {
-			'weight' 	: Math.abs(Number($('#pounds').val())),
-			'feet' 	: Math.abs(Number($('#feet').val())),
-			'inches' 	: Math.abs(Number($('#inches').val())),
-			'waist'	: Math.abs(Number($('#waist').val())),
-			'neck' 	: Math.abs(Number($('#neck').val())),
-			'hip' 	: Math.abs(Number($('#hip').val()))
+			'weight' 	: Math.abs(Number($('#bfc_pounds').val())),
+			'feet' 	: Math.abs(Number($('#bfc_feet').val())),
+			'inches' 	: Math.abs(Number($('#bfc_inches').val())),
+			'waist'	: Math.abs(Number($('#bfc_waist').val())),
+			'neck' 	: Math.abs(Number($('#bfc_neck').val())),
+			'hip' 	: Math.abs(Number($('#bfc_hip').val()))
 		};
 		
 		var error = checkData(data);
@@ -234,12 +232,12 @@ function calculateBodyFatContent() {
 			//doFemaleBFC(weight, waist, wrist, hip, forearm);
 			doFemaleBFC('#bodyfat_result', data);
 		} else {
-			console.log('female fail');
+			//console.log('female fail');
 			showResult('#bodyfat_result', 'Please enter all info.', false);
 		}
 		
 	} else {
-		console.log('all fail');
+		//console.log('all fail');
 		showResult('#bodyfat_result', 'Please enter all info.', false);
 	}
 	
@@ -274,11 +272,11 @@ For men (in inches):
 */
 
 function doMaleBFC(elem, data) {
-	console.log('do male');
+	//console.log('do male');
 	var height = data.inches + feetToInches(data.feet);
-	//console.log('h : ' + height);
+	////console.log('h : ' + height);
 	var fat_per = ((86.010 * Math.log(data.waist - data.neck) / Math.log(10)  - 70.041 * Math.log(height) / Math.log(10) + 36.76)/100).toFixed(2);
-	//console.log(fat_per);
+	////console.log(fat_per);
 	
 	var fat = Math.round(data.weight * fat_per);
 	var lean = data.weight - fat;
@@ -288,7 +286,7 @@ function doMaleBFC(elem, data) {
 }
 
 /*function doMaleBFC(weight, waist) {
-	//console.log('do male');
+	////console.log('do male');
 	var f1 = (weight * 1.082) + 94.42;
 	var f2 = waist * 4.15;
 	
@@ -327,7 +325,7 @@ function showBFCResult(elem, lean, fat, per, ok) {
 	ok = ok == undefined ? true : ok;
 	
 	//font_size = font_size == undefined ? '' : ' font-size:'+font_size+'px;';
-	console.log('elem');
+	//console.log('elem');
 	if(ok) {
 		
 		$(elem).html('<div class="hidden_result" style="display:none;"><table><tbody><tr><td class="label_d">Lean Body Mass</td><td>: '+lean.toString() + ' lbs.'+'</td></tr><tr><td class="label_d">Body Fat Weight</td><td>: '+fat.toString() + ' lbs.'+'</td></tr><tr><td class="label_d">Body Fat Percentage</td><td>: '+per+'%</td></tr></tbody></table></div>');
@@ -350,7 +348,7 @@ function feetToInches(val) {
 function checkData(data) {
 	var e = false;
 	$.each(data, function(i, v){
-		//console.log(i + ' : ' + v);
+		////console.log(i + ' : ' + v);
 		if(v.toString() == 'NaN') {
 			e = true;
 			
@@ -358,4 +356,27 @@ function checkData(data) {
 	});
 	
 	return e;
+}
+
+
+
+
+function showInfo(obj) {
+	//console.log('*');
+	var id = '#'+$(obj).attr('rel');
+	var top = $(obj).parent().position().top + 'px';	
+	var left = $(obj).parent().position().left + 'px';
+	
+	$(id).css('top', top);
+	$(id).css('left', left);
+	$(id).css('z-index', '100');
+	$(id).fadeIn('fast', null, function(){
+			$(id).click(function(e){
+					$(id).hide();
+				});
+			$('.closer').click(function(e){
+					e.preventDefault();
+					$(id).hide();
+				});
+		});
 }

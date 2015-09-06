@@ -32,7 +32,7 @@ $is_ie7 = (strpos($user_agent, 'msie 7') > 0 ? 1 : 0);
                               <label for="feet">Feet:</label>
                          </td>
                          <td>
-                              <input type="number" name="feet" class="number_input" id="feet" tabindex="1" />
+                              <input type="number" name="ideal_feet" class="number_input" id="ideal_feet" tabindex="1" />
                          </td>
                     </tr>
                     <tr>
@@ -40,7 +40,7 @@ $is_ie7 = (strpos($user_agent, 'msie 7') > 0 ? 1 : 0);
                               <label for="inches">Inches:</label>
                          </td>
                          <td>
-                              <input type="number" name="inches" class="number_input" id="inches" tabindex="2" />
+                              <input type="number" name="inches" class="number_input" id="ideal_inches" tabindex="2" />
                          </td>
                     </tr>
                     <tr>
@@ -74,7 +74,7 @@ $is_ie7 = (strpos($user_agent, 'msie 7') > 0 ? 1 : 0);
                               <label for="frame_size">SEX:</label>
                          </td>-->
                          <td colspan="2">
-                              <select class="select_input" name="sex" id="sex" tabindex="4">
+                              <select class="select_input" name="sex" id="ideal_sex" tabindex="4">
                                    <option value="select">select</option>
                                    <option value="FEMALE">FEMALE</option>
                                    <option value="MALE">MALE</option>
@@ -83,7 +83,8 @@ $is_ie7 = (strpos($user_agent, 'msie 7') > 0 ? 1 : 0);
                     </tr>
                     <tr>
                          <td colspan="2">
-                              <input type="submit" name="submit" class="submit_input" value="CALCULATE" onclick="initIdealWeightCalculation();" />
+                              <!-- <input type="submit" name="submit" class="submit_input" value="CALCULATE" onclick="initIdealWeightCalculation();" /> -->
+                              <input type="submit" name="submit" class="submit_input" value="CALCULATE" id="ideal_submit" />
                          </td>
                     </tr>
                </tbody>

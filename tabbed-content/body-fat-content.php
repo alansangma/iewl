@@ -15,7 +15,7 @@
                </tr>
                <tr>
                     <td colspan="2">
-                         <select class="select_input" name="sex" id="sex" tabindex="1">
+                         <select class="select_input" name="sex" id="bfc_sex" tabindex="1">
                               <option value="select">select</option>
                               <option value="FEMALE">FEMALE</option>
                               <option value="MALE">MALE</option>
@@ -31,7 +31,7 @@
                          <label for="pounds">Pounds:</label>
                     </td>
                     <td class="number_d">
-                         <input type="number" name="pounds" class="number_input" id="pounds" tabindex="2" />
+                         <input type="number" name="pounds" class="number_input" id="bfc_pounds" tabindex="2" />
                     </td>
                </tr>
                <!--///////////////////////////-->
@@ -46,7 +46,7 @@
                          </label>
                     </td>
                     <td>
-                         <input type="number" name="feet" class="number_input" id="feet" tabindex="3" />
+                         <input type="number" name="feet" class="number_input" id="bfc_feet" tabindex="3" />
                     </td>
                </tr>
                <tr>
@@ -56,7 +56,7 @@
                          </label>
                     </td>
                     <td>
-                         <input type="number" name="inches" class="number_input" id="inches" tabindex="4" />
+                         <input type="number" name="inches" class="number_input" id="bfc_inches" tabindex="4" />
                     </td>
                </tr>
                <!--           HEIGHT          -->
@@ -75,7 +75,7 @@
                          </label>
                     </td>
                     <td>
-                         <input type="number" name="waist" class="number_input" id="waist" tabindex="5" />
+                         <input type="number" name="waist" class="number_input" id="bfc_waist" tabindex="5" />
                     </td>
                </tr>
                
@@ -88,7 +88,7 @@
                               </label>
                          </td>
                          <td>
-                              <input type="number" name="hip" class="number_input" id="hip" tabindex="6" />
+                              <input type="number" name="hip" class="number_input" id="bfc_hip" tabindex="6" />
                          </td>
                     </tr>
                     <!--
@@ -122,7 +122,7 @@
                          </label>
                     </td>
                     <td>
-                         <input type="number" name="neck" class="number_input" id="neck" tabindex="7" />
+                         <input type="number" name="neck" class="number_input" id="bfc_neck" tabindex="7" />
                     </td>
                </tr>
                <!--        MEASUREMENTS       -->

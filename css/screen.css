@@ -607,7 +607,7 @@ a.closer {
 	-o-border-radius:4px;
 	-border-radius:4px;
 	
-	opacity:0.25;
+	/*opacity:0.25;*/
 }
 
 .calc_result p.min_max_result {
