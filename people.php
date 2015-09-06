@@ -4,9 +4,9 @@ include_once('./include/generic_head_bstp.php');
 ?>
 
 <body>
-		<?php
-		include_once('./include/generic_page_top_bstp.php');
-		?>
+	<?php
+	include_once('./include/generic_page_top_bstp.php');
+	?>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">

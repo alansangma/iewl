@@ -1,12 +1,12 @@
-<div class="grid_12 alpha">
+<div class="col-md-12 alpha">
      <h3>Calculate Your Body Mass Index</h3>
 </div>
 <div class="clear"></div>
-<div class="grid_5 alpha">
+<div class="col-md-5 alpha">
      <p>Body Mass Index or BMI is a ratio of weight to the square of an individual&rsquo;s height.  It is often used to determine whether your weight is appropriate to your height.</p>
      <p>This is also a way to say objectively whether you are underweight, within a normal range, overweight, obese, or morbidly obese.  If you are under or overweight this tool also allows you to see by how much you are under or overweight.</p>
 </div>
-<div class="grid_2 omega prefix_1">
+<div class="col-md-2 omega col-md-offset-1">
 	<form class="tools_form" name="tools_form" method="post" onsubmit="return false;">
 	<table class="form_table">
      	<tbody>
@@ -42,7 +42,7 @@
                </tr>
                <tr>
                     <td colspan="2">
-                         <input type="submit" name="submit" class="submit_input" value="CALCULATE" onclick="calculateBMI();" />
+                         <input type="submit" name="submit" class="submit_input" value="CALCULATE" id="bmi_sumit"/>
                     </td>
                </tr>
           </tbody>
@@ -50,16 +50,16 @@
      </form>
 </div>
 
-<div class="grid_3 prefix_1 calc_result_wrapper">
+<div class="col-md-3 col-md-offset-1 calc_result_wrapper">
 	<h4>YOUR BMI</h4>
-	<div id="calc_result"></div>
+	<div id="bmi_result" class="calc_result"></div>
      <p class="note">Please see chart below.</p>
 </div>
 
 <div class="clear tall_10">
 </div>
 
-<div class="grid_5 alpha" style="border-top:solid 1px #fff; padding-top:10px;">
+<div class="col-md-5 alpha" style="border-top:solid 1px #fff; padding-top:10px;">
      <p>There are several inherent errors that are present when you calculate a BMI.   The main error involves the amount of muscle mass a person has.  People with greater muscle mass could be thought to have normal BMI&rsquo;s even when the number shows that they are overweight while people with lower muscle mass may be categorized as normal weight when in reality they are overweight. </p>
      
      <p>This difference is also seen when comparing BMI&rsquo;s with men and women.  Because men usually have greater muscle mass, a normal BMI for a man might be in the range of 22-26 while a normal BMI for a woman is lower and might be between 18.5 and 23.</p>
@@ -68,7 +68,7 @@
 
 </div>
 
-<div class="grid_6 prefix_1 omega">
+<div class="col-md-6 col-md-offset-1 omega">
 	<table class="info_table">
      	<thead>
           	<tr class="table_title_row">

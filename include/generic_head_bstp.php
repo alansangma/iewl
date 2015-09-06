@@ -40,11 +40,11 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 <script type="text/javascript" language="javascript" src="./scripts/sub_navs.js"></script>
-<?php if($is_home) echo '<script type="text/javascript" language="javascript" src="./scripts/jquery.cycle.all.min.js"></script>
+<?php /*if($is_home) echo '<script type="text/javascript" language="javascript" src="./scripts/jquery.cycle.all.min.js"></script>
 <script type="text/javascript" language="javascript" src="./scripts/home_slides.js"></script>';
 if(strpos($php_self, 'tools.php') || strpos($php_self, 'people.php') || strpos($php_self, 'news.php')) echo '<script type="text/javascript" language="javascript" src="./scripts/ajax_content.js"></script>
 ';
-if(strpos($php_self, 'weight-loss.php')) echo '<script type="text/javascript" language="javascript" src="./scripts/row_height.js"></script>';
+if(strpos($php_self, 'weight-loss.php')) echo '<script type="text/javascript" language="javascript" src="./scripts/row_height.js"></script>';*/
 ?>
 <script type="text/javascript" language="javascript">
 $(document).ready(function(){
@@ -54,7 +54,7 @@ $(document).ready(function(){
 	/*if($is_home) echo '
 	initHomeSlides();
 ';*/
-
+/*
 	if(strpos($php_self, 'tools.php') || strpos($php_self, 'people.php') || strpos($php_self, 'news.php')) {
 		$ary = array();
 		if(strpos($php_self, 'tools.php')) {
@@ -75,7 +75,7 @@ $(document).ready(function(){
 		}
 		echo "initAjaxContent([".$ary_str."], '".$is_ie7."');
 ";
-	}
+	}*/
 
 	/*if(strpos($php_self, 'weight-loss.php')) echo '
 	evenRowHeight();

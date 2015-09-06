@@ -93,7 +93,7 @@ $is_ie7 = (strpos($user_agent, 'msie 7') > 0 ? 1 : 0);
      
      <div class="grid_3 prefix_1 calc_result_wrapper">
           <h4>YOUR IDEAL WEIGHT</h4>
-          <div id="calc_result"></div>
+          <div id="ideal_result" class="calc_result"></div>
           <p class="note">*Measurement given in pounds</p>
      </div>
      

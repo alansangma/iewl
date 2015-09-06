@@ -35,7 +35,7 @@
                     </tr>
                     <tr>
                          <td colspan="2">
-                              <input type="submit" name="submit" class="submit_input" value="CALCULATE" onclick="calculateWaistHip();" />
+                              <input type="submit" name="submit" class="submit_input" value="CALCULATE" id="hipwaist_submit" />
                          </td>
                     </tr>
                </tbody>
@@ -45,7 +45,7 @@
      
      <div class="grid_3 prefix_1 calc_result_wrapper">
           <h4>WAIST TO HIP RATIO</h4>
-          <div id="calc_result"></div>
+          <div id="waisthip_result" class="calc_result"></div>
      </div>
      
      <div class="clear"></div>

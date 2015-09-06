@@ -483,7 +483,7 @@ ul.navigation li a.sub_nav_anchor:hover {
 /*		INFO TABLE		*/
 .info_table {
 	padding:0;
-	margin:0 0 10px 0;
+	margin:10px 0 10px 0;
 	
 	width:100%;
 	
@@ -581,7 +581,7 @@ a.closer {
 	color:#808080;
 }
 
-#calc_result {
+.calc_result {
 	display:block;
 	height:100px;
 	width:80%;
@@ -610,15 +610,15 @@ a.closer {
 	opacity:0.25;
 }
 
-#calc_result p.min_max_result {
+.calc_result p.min_max_result {
 	display:block;
 	margin:0 0 0 0;
 	width:100%;
 	text-align:center;
 }
 
-#calc_result h3,
-#calc_result table  {
+.calc_result h3,
+.calc_result table  {
 	display:block;
 	width:100%;
 	
@@ -631,7 +631,7 @@ a.closer {
 	line-height:40px;
 }
 
-#calc_result table {
+.calc_result table {
 	text-align:left;
 	font-size:16px;
 	line-height:1.2em;
@@ -641,7 +641,7 @@ a.closer {
 	width:90%;
 }
 
-#calc_result table td.label_d {
+.calc_result table td.label_d {
 	padding:0 20px 0 0;
 }
 /*		RESULT		*/
