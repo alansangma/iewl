@@ -2,18 +2,18 @@
 $user_agent = strtolower($_SERVER['HTTP_USER_AGENT']);
 $is_ie7 = (strpos($user_agent, 'msie 7') > 0 ? 1 : 0);
 ?>
-<div class="col-md-10">
+<div class="col-sm-10">
      <h3>Calculate your ideal body weight</h3>
 </div>
 <div class="clear"></div>
 
-     <div class="col-md-6 ">
+     <div class="col-sm-6 ">
           <p>A frequent question I receive from patients is &ldquo;what should be my ideal body weight?&rdquo;  This question is actually hard to answer and is somewhat controversial.  One method would be to tell someone what their weight would be by giving them their weight at a range of appropriate BMI&rsquo;s.  This results in a pretty broad range of ideal weights. </p>
           <p>Also there is the problem of muscle mass.  See my explanation on the <a href="#bmi" title="view BMI Calculator">BMI page</a>.  There are many formulas that will give an ideal body weight.   The formula that is most appropriate for what is a healthy weight is to get a weight based on the Metropolitan Life Insurance Tables.  These tables will recommend a weight for a person that is associated with the longest life span and are based on actuarial tables.  </p>
           <p>Unlike the actual Metropolitan Life Insurance Tables, the weight and height used here are based on your height without shoes and your weight without clothes which I believe is how most people measure themselves at home.  If you weigh yourself in your clothes then add 3 pounds for women and 5 pounds for men which is what is assumed by Metropolitan Life.  If you measure yourself in shoes then you should subtract an inch from your height which is also assumed by Metropolitan Life.  </p>
           <p>The formula used on the right is a custom formula that approximates the values found in the Metropolitan Life Insurance Actuarial Tables.</p>
      </div>
-     <div class="col-md-2 col-md-offset-1">
+     <div class="col-sm-2 col-sm-offset-1">
           <form class="tools_form" name="tools_form" method="post" onsubmit="return false;">
                <table class="form_table">
                     <tbody>
@@ -84,7 +84,7 @@ $is_ie7 = (strpos($user_agent, 'msie 7') > 0 ? 1 : 0);
                </table>
           </form>
      </div>
-     <div class="col-md-3  calc_result_wrapper">
+     <div class="col-sm-3  calc_result_wrapper">
           <h4>YOUR IDEAL WEIGHT</h4>
           <div id="ideal_result" class="calc_result"></div>
           <p class="note">*Measurement given in pounds</p>
@@ -99,10 +99,10 @@ $is_ie7 = (strpos($user_agent, 'msie 7') > 0 ? 1 : 0);
      
      <!--/////////////////////////////////////-->
      <!--            FINGER WRAP              -->
-     <div class="col-md-7">
+     <div class="col-sm-7">
           <h3 style="margin:20px 0 10px 0; padding:0;">Measurement Methods</h3>
      </div>
-     <div class="col-md-7  info_table_wrapper">
+     <div class="col-sm-7  info_table_wrapper">
           <h4>Finger Wrap Method <span style="font-size:12px;">(easiest and least accurate)</span></h4>
           <p>Wrap your thumb and middle finger around the bony prominences of your wrist.  <!--See your size in the table below.-->    </p>
           <table class="info_table">
@@ -152,7 +152,7 @@ $is_ie7 = (strpos($user_agent, 'msie 7') > 0 ? 1 : 0);
      
      <!--/////////////////////////////////////-->
      <!--            MEASURE WRIST            -->
-     <div class="col-md-7  info_table_wrapper">
+     <div class="col-sm-7  info_table_wrapper">
           <h4>Measure Your Wrist <span style="font-size:12px;">(more accurate but a little harder)</span></h4>
           <p>Use a flexible measuring tape to measure the circumference around the bony prominences of your wrist.  Find your frame size listed in the table above.  You can also use a string and then measure the string if you do not have a flexible measuring tape.</p>
           <!--///////////////-->
@@ -308,7 +308,7 @@ $is_ie7 = (strpos($user_agent, 'msie 7') > 0 ? 1 : 0);
      
      <!--/////////////////////////////////////-->
      <!--            ELBOW                    -->
-     <div class="col-md-7  info_table_wrapper">
+     <div class="col-sm-7  info_table_wrapper">
           <h4>Elbow Measurement <span style="font-size:12px;">(most accurate and most difficult)</span></h4>
           <p>Measure the distance between the bony prominences of your elbow.  This is most accurately done with  a caliper but you could approximate it by using your fingers and placing them along a measuring tape.  If you choose to do the later method, I would recommend three different measurements and then taking the average of those measurements.</p>
           

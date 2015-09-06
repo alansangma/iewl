@@ -9,6 +9,10 @@ include_once('./include/generic_head_bstp.php');
 - Index page fixes
 - weight-loss.php made responsive
 - nav styles
+
+2015-09-05: 3 hours : People and Tools
+2015-09-05: 3.5 hours : Tools
+2015-09-05: 2.5 hours : Contact and debugging and final styling
 */
 ?>
 <body>

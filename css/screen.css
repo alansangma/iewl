@@ -85,6 +85,8 @@ a:active {
 ul {
 	list-style:square;
 	font-size:inherit;
+	margin-top: 10px;
+	margin-bottom: 15px;
 	}
 ul li {
 	margin-left:15px;
@@ -587,8 +589,8 @@ a.closer {
 
 .calc_result {
 	display:block;
-	height:100px;
-	width:80%;
+	min-height:100px;
+	/*width:80%;*/
 	/*
 	width:140px;
 	
@@ -685,6 +687,11 @@ a.partner_a {
 
 /*----------------------------*/
 /*	SUCCESS STORIES		*/
+.success-story {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
 .before_after p.before_after_title {
 	display:block;
 	
@@ -868,7 +875,7 @@ p.no_left_margin {
 
 .office_image {
 	padding:0;
-	margin:0px 0px 10px 0;
+	margin:0px 0px 0px 0;
 }
 
 .rounded {
@@ -1096,9 +1103,11 @@ p.columns_3 {
 	padding: 10px 10px;
 	background: #fff;
 }
-
-.grid_4.bordered {
-	width: 258px;
+.bordered:after {
+	content: "";
+	height: 0px;
+	display: block;
+	clear:both;
 }
 
 /*.bordered_grid h4 {
