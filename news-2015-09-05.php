@@ -13,7 +13,7 @@ include_once('./include/generic_head_bstp.php');
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-8">
+			<div class="col-md-7">
 				<!-- //////////// -->
 				<!-- 	TAB NAV	 -->
 				<ul id="tabs" class="nav nav-tabs nav-justified" data-tabs="tabs">
@@ -28,10 +28,8 @@ include_once('./include/generic_head_bstp.php');
 				<!-- //////////// -->
 				<?php
 				require_once('include/config.php');
-				//$connection = mysql_connect($dbhost, $dbuser, $dbpassword);
-				//$connection = mysqli_connect($dbhost, $dbuser, $dbpassword, $dbdatabase);
-				//$mysqli = new mysqli($dbhost, $dbuser, $dbpassword, $dbdatabase);
-				//mysql_select_db($dbdatabase, $connection);
+				$connection = mysql_connect($dbhost, $dbuser, $dbpassword);
+				mysql_select_db($dbdatabase, $connection);
 				
 				?>
 				<div class="tab-content">
@@ -54,19 +52,16 @@ include_once('./include/generic_head_bstp.php');
 						</div>
 					</div>
 
-					<?php 
-					//$mysqli->close();
-					//mysql_close($connection);
-					?>
+					<?php mysql_close($connection); ?>
 				</div>
 			</div>
-			<div class="col-sm-3 col-md-offset-1">
+			<div class="col-sm-2 col-md-offset-1">
 				<div class="tumblr-link">
 					<a class="tumblr-link-img" href="http://officenewsatiewl.tumblr.com" title="follow us on Tumblr" target="_blank"><img src="graphics/social/tumblr.png" alt="Office News"/></a>
 					<a href="http://officenewsatiewl.tumblr.com" title="follow us on Tumblr" target="_blank">Office News</a>
 				</div>
-			<!-- </div>
-			<div class="col-sm-2"> -->
+			</div>
+			<div class="col-sm-2">
 				<div class="tumblr-link">
 					<a class="tumblr-link-img" href="http://inlandempireweightloss.tumblr.com" title="follow us on Tumblr" target="_blank"><img src="graphics/social/tumblr.png" alt="Weight Loss News"/></a>
 					<a href="http://inlandempireweightloss.tumblr.com" title="follow us on Tumblr" target="_blank">Weight Loss News</a>
