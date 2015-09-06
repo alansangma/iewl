@@ -514,6 +514,10 @@ ul.navigation li a.sub_nav_anchor:hover {
 	margin:0 0 0 0;
 }
 
+.info_table_wrapper {
+	margin-bottom: 40px;
+}
+
 .info_table_wrapper p {
 	width:95%;
 	
@@ -633,16 +637,17 @@ a.closer {
 
 .calc_result table {
 	text-align:left;
-	font-size:16px;
+	font-size:14px;
 	line-height:1.2em;
-	padding:0 10px;
+	padding:10px;
 	margin-left:5px;
-	margin-top:20px;
+	margin-top:5px;
 	width:90%;
 }
 
 .calc_result table td.label_d {
-	padding:0 20px 0 0;
+	padding:0 10px 10px 0;
+	width:50%;
 }
 /*		RESULT		*/
 /*-----------------------*/

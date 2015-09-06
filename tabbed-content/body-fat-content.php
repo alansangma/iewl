@@ -1,11 +1,11 @@
-<div class="col-md-12 alpha">
+<div class="col-md-12 ">
      <h3>Body Fat Content</h3>
 </div>
 <div class="clear"></div>
-<div class="col-md-5 alpha">
+<div class="col-md-6 ">
 <p>This body fat calculator is used by the US Navy to approximate body fat in new recruits. Other methods used to approximate body fat can include calipers, bio-impedance, infra-red, dexa scanning and dunking yourself in a large calibrated tub of water. In our clinic, we use a bio-impedance scale.  This is a technique that does not require any equipment other than a measuring tape but it may be less accurate as well.</p>
 </div>
-<div class="col-md-3 omega">
+<div class="col-md-3  ">
 	<form class="tools_form" name="tools_form" method="post" onsubmit="return false;">
 	<table class="form_table">
      	<tbody>
@@ -137,9 +137,9 @@
      </form>
 </div>
 
-<div class="col-md-4 calc_result_wrapper">
-	<h4 style="margin-left:5%;">BODY FAT CONTENT</h4>
-	<div id="bodyfat_result" class="calc_result" style="width:90%; margin-left:5%; height:100px;"></div>
+<div class="col-md-3 calc_result_wrapper">
+	<h4>BODY FAT CONTENT</h4>
+	<div id="bodyfat_result" class="calc_result" style="min-height:100px; height:auto;"></div>
     <!-- <p class="note" style="margin-left:5%;">Please see chart below.</p>-->
 </div>
 

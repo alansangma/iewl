@@ -41,7 +41,7 @@ include_once('./include/generic_head_bstp.php');
 					<?php include('tabbed-content/bmi-content.php'); ?>
 				</div>
 				<div class="tab-pane" id="ideal-weight-content">
-					<?php include('tabbed-content/ideal-weight-content.php'); ?>\
+					<?php include('tabbed-content/ideal-weight-content.php'); ?>
 				</div>
 				<div class="tab-pane" id="waist-hip-ratio-content">
 					<?php include('tabbed-content/waist-hip-ratio-content.php'); ?>

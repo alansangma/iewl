@@ -135,7 +135,7 @@ function calculateWaistHip(){
 	
 	var result = (w/h).toFixed(2);
 	
-	if(result.toString() != 'NaN') {
+	if(result.toString() != 'NaN' && result.toString().toLowerCase() != 'infinity' && result > 0) {
 		showResult('#waisthip_result', result, true);
 	} else {
 		showResult('#waisthip_result', 'Please enter<br />both Hip and Waist.', false);
@@ -143,7 +143,7 @@ function calculateWaistHip(){
 	
 	$('#warning').hide();
 	
-	if(result > 0.8) {
+	if(result > 0.8 && result.toString().toLowerCase() != 'infinity') {
 		$('#warning').fadeIn();
 	}
 		
@@ -203,8 +203,8 @@ function calculateBodyFatContent() {
 		};
 		//console.log(data.weight);
 		var error = checkData(data);
-			//console.log('e : ' + error);
-		if(error !== true) {
+			console.log('e : ' + error);
+		if(!error) {
 			//doMaleBFC(weight, waist);
 			doMaleBFC('#bodyfat_result', data);
 		} else {
@@ -348,8 +348,8 @@ function feetToInches(val) {
 function checkData(data) {
 	var e = false;
 	$.each(data, function(i, v){
-		////console.log(i + ' : ' + v);
-		if(v.toString() == 'NaN') {
+		console.log('*:'+v.toString());
+		if(v.toString() == 'NaN' || v.toString() == '0') {
 			e = true;
 			
 		}
