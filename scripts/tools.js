@@ -8,6 +8,17 @@ jQuery(document).ready(function(jQuery) {
 	jQuery('#hipwaist_submit').click(function(){
 		calculateWaistHip();
 	});
+
+	jQuery('.info-trigger').on('click', function(event){
+		event.preventDefault();
+		var target = '#'+jQuery(this).attr('href');
+		jQuery(window).scrollTo(target);
+	});
+
+	jQuery('.scroll-to-top').on('click', function(event){
+		event.preventDefault();
+		jQuery(window).scrollTo(0);
+	});
 });
 
 function showResult(elem, str, ok, font_size) {

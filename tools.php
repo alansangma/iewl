@@ -107,6 +107,7 @@ if (0.25) {
 </div>
 </noscript>
 <!-- End Google Code for Tools Conversion -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
 <script src="scripts/tools.js"></script>
 <script src="scripts/nav-tabs.js"></script>
 <script>
