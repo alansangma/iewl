@@ -7,7 +7,7 @@ include_once('./include/generic_head_bstp.php');
 	<?php
 	include_once('./include/generic_page_top_bstp.php');
 	?>
-	<div class="container">
+	<div class="container" id="main-container">
 		<div class="row">
 			<div class="col-md-12">
 				<h2 class="iewl-page-header">Tools</h2>
@@ -17,7 +17,7 @@ include_once('./include/generic_head_bstp.php');
 		<div class="row">
 			<!-- //////////// -->
 			<!-- 	TAB NAV	 -->
-			<ul id="tabs" class="nav nav-tabs nav-justified" data-tabs="tabs">
+			<ul id="tabs" class="nav nav-tabs nav-justified hidden-xs" data-tabs="tabs">
 				<li id="bmi-nav">
 					<a class="tab-nav-link" href="#bmi-content" data-toggle="tab">BMI</a>
 				</li>
@@ -34,20 +34,52 @@ include_once('./include/generic_head_bstp.php');
 			<!-- 	TAB NAV	 -->
 			<!-- //////////// -->
 
-			<div class="clear tall_40"></div>
+			<div class="clear tall_40 hidden-xs"></div>
 
 			<div class="tab-content">
 				<div class="tab-pane" id="bmi-content">
+					<div class="row">
+						<div class="col-xs-12 visible-xs show-xs-tabs-wrap">
+							<h2 class="show-xs-tabs">BMI <i class="fa fa-caret-down"></i></h2>
+						</div>
+						<div class="clear tall_20 visible-xs"></div>
+					</div>
+					<div class="row">
 					<?php include('tabbed-content/bmi-content.php'); ?>
+					</div>
 				</div>
 				<div class="tab-pane" id="ideal-weight-content">
-					<?php include('tabbed-content/ideal-weight-content.php'); ?>
+					<div class="row">
+						<div class="col-xs-12 visible-xs show-xs-tabs-wrap">
+							<h2 class="show-xs-tabs">Ideal Weight <i class="fa fa-caret-down"></i></h2>
+						</div>
+						<div class="clear tall_20 visible-xs"></div>
+					</div>
+					<div class="row">
+						<?php include('tabbed-content/ideal-weight-content.php'); ?>
+					</div>
 				</div>
 				<div class="tab-pane" id="waist-hip-ratio-content">
+					<div class="row">
+						<div class="col-xs-12 visible-xs show-xs-tabs-wrap">
+							<h2 class="show-xs-tabs">Waist/Hip Ratio <i class="fa fa-caret-down"></i></h2>
+						</div>
+						<div class="clear tall_20 visible-xs"></div>
+					</div>
+					<div class="row">
 					<?php include('tabbed-content/waist-hip-ratio-content.php'); ?>
+					</div>
 				</div>
 				<div class="tab-pane" id="body-fat-content">
-					<?php include('tabbed-content/body-fat-content.php'); ?>
+					<div class="row">
+						<div class="col-xs-12 visible-xs show-xs-tabs-wrap">
+							<h2 class="show-xs-tabs">Body Fat <i class="fa fa-caret-down"></i></h2>
+						</div>
+						<div class="clear tall_20 visible-xs"></div>
+					</div>
+					<div class="row">
+						<?php include('tabbed-content/body-fat-content.php'); ?>
+					</div>
 				</div>
 			</div>
 		</div>

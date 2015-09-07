@@ -9,7 +9,8 @@
 <meta charset="utf-8" />
 
 <!-- Set the viewport width to device width for mobile -->
-<meta name="viewport" content="width=device-width" />
+<!-- <meta name="viewport" content="width=device-width" /> -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <meta name="Kewords" content="Inland Empire, Weight Loss, Family Medicine, Riverside, CA, Carl Knopke, Lesley Laird"/>
 <meta name="description" content="We use a comprehensive medical weight loss program to help you achieve and maintain a healthy weight and lifestyle.  Our medically supervised program combines a nutritionally complete diet with exercise and behavioral counseling.  We want you to lose weight safely and establish healthy eating and exercise habits for life. Additionally, our Riverside office is a full service Family Medicine clinic where we provide a broad range of services to pediatric, adult, and geriatric populations." />

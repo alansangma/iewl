@@ -1,11 +1,11 @@
-jQuery(document).ready(function($) {
+jQuery(document).ready(function(jQuery) {
 	bindIdealWeight();
 	bindBFC();
 
-	$('#bmi_sumit').click(function(){
+	jQuery('#bmi_sumit').click(function(){
 		calculateBMI();
 	});
-	$('#hipwaist_submit').click(function(){
+	jQuery('#hipwaist_submit').click(function(){
 		calculateWaistHip();
 	});
 });
@@ -14,18 +14,18 @@ function showResult(elem, str, ok, font_size) {
 
 	ok = ok == undefined ? true : ok;
 	font_size = font_size == undefined ? '' : ' font-size:'+font_size+'px;';
-	if(ok) $(elem).html('<h3 style="'+font_size+'">'+str+'</h3>');
-	else $(elem).html('<p>'+str+'</p>');
-	$(elem).css('opacity', 0);
-	/*if(Number($(elem).css('opacity')) < 1)*/ $(elem).animate({opacity:1}, 'fast');
-	$('#calc_result h3').fadeIn();
+	if(ok) jQuery(elem).html('<h3 style="'+font_size+'">'+str+'</h3>');
+	else jQuery(elem).html('<p>'+str+'</p>');
+	jQuery(elem).css('opacity', 0);
+	/*if(Number(jQuery(elem).css('opacity')) < 1)*/ jQuery(elem).animate({opacity:1}, 'fast');
+	jQuery('#calc_result h3').fadeIn();
 }
 
 /////////////////////////////////////
 //		BMI
 function calculateBMI() {
-	var inches = Math.abs(Number($('#inches').val())) + feetToInches($('#feet').val());
-	var pounds = Math.abs(Number($('#pounds').val()));
+	var inches = Math.abs(Number(jQuery('#inches').val())) + feetToInches(jQuery('#feet').val());
+	var pounds = Math.abs(Number(jQuery('#pounds').val()));
 	
 	var bmi = Number(pounds / (inches * inches) * 703).toFixed(1);
 	//console.log('*'+bmi);
@@ -50,25 +50,25 @@ var frames = {
 
 function bindIdealWeight() {
 	////console.log('***');
-	$('.show_info').click(function(e){
+	jQuery('.show_info').click(function(e){
 		e.preventDefault();
-		showInfo($(this));
+		showInfo(jQuery(this));
 	});
-	$('#frame_size').change(function(e){
+	jQuery('#frame_size').change(function(e){
 		e.preventDefault();
-		if($('#frame_size option:selected').val().indexOf('learn') >= 0) {
-			showInfo($('#frame_size option:selected'));
-			$(this).val('select');
+		if(jQuery('#frame_size option:selected').val().indexOf('learn') >= 0) {
+			showInfo(jQuery('#frame_size option:selected'));
+			jQuery(this).val('select');
 			
 		}
 	});
-	$('#ideal_submit').click(initIdealWeightCalculation);
+	jQuery('#ideal_submit').click(initIdealWeightCalculation);
 }
 
 function initIdealWeightCalculation() {
-	var inches = Math.abs(Number($('#ideal_inches').val())) + feetToInches($('#ideal_feet').val());
-	var size = Number(frames[$('#frame_size').val()]);
-	var sex = $('#ideal_sex').val();
+	var inches = Math.abs(Number(jQuery('#ideal_inches').val())) + feetToInches(jQuery('#ideal_feet').val());
+	var size = Number(frames[jQuery('#frame_size').val()]);
+	var sex = jQuery('#ideal_sex').val();
 	
 	if(size != 'select' && sex != 'select') {
 		if(inches.toString() != 'NaN') {
@@ -117,10 +117,10 @@ function calculateIdealWeight(inches, size, sex) {
 }
 
 function showIdealResult(elem, ideal, min, max) {
-	$(elem).html('<div class="hidden_result" style="display:none;"><h3 style="margin-top:20px;">'+ideal+'</h3><p class="min_max_result">' + min + ' - ' + max + '</p></div>');
-	/*if(Number($(elem).css('opacity')) < 1) */$(elem).css('opacity', '1');
-	$(elem).show();
-	$('.hidden_result').fadeIn();
+	jQuery(elem).html('<div class="hidden_result" style="display:none;"><h3 style="margin-top:20px;">'+ideal+'</h3><p class="min_max_result">' + min + ' - ' + max + '</p></div>');
+	/*if(Number(jQuery(elem).css('opacity')) < 1) */jQuery(elem).css('opacity', '1');
+	jQuery(elem).show();
+	jQuery('.hidden_result').fadeIn();
 }
 
 //		Ideal Weight
@@ -130,8 +130,8 @@ function showIdealResult(elem, ideal, min, max) {
 /////////////////////////////////////
 //		Waist / Hip
 function calculateWaistHip(){
-	var w = Math.abs(Number($('#waist').val()));
-	var h = Math.abs(Number($('#hip').val()));
+	var w = Math.abs(Number(jQuery('#waist').val()));
+	var h = Math.abs(Number(jQuery('#hip').val()));
 	
 	var result = (w/h).toFixed(2);
 	
@@ -141,10 +141,10 @@ function calculateWaistHip(){
 		showResult('#waisthip_result', 'Please enter<br />both Hip and Waist.', false);
 	}
 	
-	$('#warning').hide();
+	jQuery('#warning').hide();
 	
 	if(result > 0.8 && result.toString().toLowerCase() != 'infinity') {
-		$('#warning').fadeIn();
+		jQuery('#warning').fadeIn();
 	}
 		
 }
@@ -156,34 +156,34 @@ function calculateWaistHip(){
 //		BFC
 var expanded = false;
 function bindBFC() {
-	$('.select_input').change(function(e){
+	jQuery('.select_input').change(function(e){
 		e.preventDefault();
 		//expanded = true;
-		var sex = $('.select_input option:selected').val();
+		var sex = jQuery('.select_input option:selected').val();
 		if(sex == 'FEMALE') {
 			expanded = true;
-			$('.tabbed_content').animate(
+			jQuery('.tabbed_content').animate(
 					{
-						height:	($('#ajax_content').outerHeight() + 50)
+						height:	(jQuery('#ajax_content').outerHeight() + 50)
 					},
 					500,
 					null,
 					function(){
-							$('.female_measurement').show();
+							jQuery('.female_measurement').show();
 						}
 					);
-			//$('#measurement_h').fadeIn();
+			//jQuery('#measurement_h').fadeIn();
 			
 		} else if ((sex == 'MALE' || sex == 'select') && expanded) {
 			expanded = false;
-			$('.female_measurement:visible').hide()
-			$('.tabbed_content').animate(
+			jQuery('.female_measurement:visible').hide()
+			jQuery('.tabbed_content').animate(
 					{
-						height:	($('#ajax_content').outerHeight() + 20)
+						height:	(jQuery('#ajax_content').outerHeight() + 20)
 					},
 					500
 					);
-			//$('#measurement_h').fadeOut();
+			//jQuery('#measurement_h').fadeOut();
 			
 		}
 			
@@ -191,15 +191,15 @@ function bindBFC() {
 }
 
 function calculateBodyFatContent() {
-	var sex = $('#bfc_sex').val();
+	var sex = jQuery('#bfc_sex').val();
 	//console.log('*sex '+sex);
 	if(sex == 'MALE') {					//	MALE
 		var data = {
-			'weight' 	: Math.abs(Number($('#bfc_pounds').val())),
-			'feet' 	: Math.abs(Number($('#bfc_feet').val())),
-			'inches' 	: Math.abs(Number($('#bfc_inches').val())),
-			'waist'	: Math.abs(Number($('#bfc_waist').val())),
-			'neck' 	: Math.abs(Number($('#bfc_neck').val()))
+			'weight' 	: Math.abs(Number(jQuery('#bfc_pounds').val())),
+			'feet' 	: Math.abs(Number(jQuery('#bfc_feet').val())),
+			'inches' 	: Math.abs(Number(jQuery('#bfc_inches').val())),
+			'waist'	: Math.abs(Number(jQuery('#bfc_waist').val())),
+			'neck' 	: Math.abs(Number(jQuery('#bfc_neck').val()))
 		};
 		//console.log(data.weight);
 		var error = checkData(data);
@@ -214,19 +214,19 @@ function calculateBodyFatContent() {
 		
 	} else if (sex == 'FEMALE') {				//	FEMALE
 		var data = {
-			'weight' 	: Math.abs(Number($('#bfc_pounds').val())),
-			'feet' 	: Math.abs(Number($('#bfc_feet').val())),
-			'inches' 	: Math.abs(Number($('#bfc_inches').val())),
-			'waist'	: Math.abs(Number($('#bfc_waist').val())),
-			'neck' 	: Math.abs(Number($('#bfc_neck').val())),
-			'hip' 	: Math.abs(Number($('#bfc_hip').val()))
+			'weight' 	: Math.abs(Number(jQuery('#bfc_pounds').val())),
+			'feet' 	: Math.abs(Number(jQuery('#bfc_feet').val())),
+			'inches' 	: Math.abs(Number(jQuery('#bfc_inches').val())),
+			'waist'	: Math.abs(Number(jQuery('#bfc_waist').val())),
+			'neck' 	: Math.abs(Number(jQuery('#bfc_neck').val())),
+			'hip' 	: Math.abs(Number(jQuery('#bfc_hip').val()))
 		};
 		
 		var error = checkData(data);
 		/*
-		var wrist = Math.abs(Number($('#wrist').val()));
-		var hip = Math.abs(Number($('#hip').val()));
-		var forearm = Math.abs(Number($('#forearm').val()));
+		var wrist = Math.abs(Number(jQuery('#wrist').val()));
+		var hip = Math.abs(Number(jQuery('#hip').val()));
+		var forearm = Math.abs(Number(jQuery('#forearm').val()));
 		*/
 		if(error !== true) {
 			//doFemaleBFC(weight, waist, wrist, hip, forearm);
@@ -251,9 +251,9 @@ function calculateBodyFatContent() {
 			doMaleBFC(weight, waist);
 		} else {
 			
-			var wrist = Math.abs(Number($('#wrist').val()));
-			var hip = Math.abs(Number($('#hip').val()));
-			var forearm = Math.abs(Number($('#forearm').val()));
+			var wrist = Math.abs(Number(jQuery('#wrist').val()));
+			var hip = Math.abs(Number(jQuery('#hip').val()));
+			var forearm = Math.abs(Number(jQuery('#forearm').val()));
 			
 			
 			if(wrist == 'NaN' || hip == 'Nan' || forearm == 'NaN') {
@@ -328,14 +328,14 @@ function showBFCResult(elem, lean, fat, per, ok) {
 	//console.log('elem');
 	if(ok) {
 		
-		$(elem).html('<div class="hidden_result" style="display:none;"><table><tbody><tr><td class="label_d">Lean Body Mass</td><td>: '+lean.toString() + ' lbs.'+'</td></tr><tr><td class="label_d">Body Fat Weight</td><td>: '+fat.toString() + ' lbs.'+'</td></tr><tr><td class="label_d">Body Fat Percentage</td><td>: '+per+'%</td></tr></tbody></table></div>');
+		jQuery(elem).html('<div class="hidden_result" style="display:none;"><table><tbody><tr><td class="label_d">Lean Body Mass</td><td>: '+lean.toString() + ' lbs.'+'</td></tr><tr><td class="label_d">Body Fat Weight</td><td>: '+fat.toString() + ' lbs.'+'</td></tr><tr><td class="label_d">Body Fat Percentage</td><td>: '+per+'%</td></tr></tbody></table></div>');
 	} else {
-		$(elem).html('<div class="hidden_result" style="display:none;"><p>'+str+'</p></div>');
+		jQuery(elem).html('<div class="hidden_result" style="display:none;"><p>'+str+'</p></div>');
 	}
 	
-	// if(Number($(elem).css('opacity')) < 1) $(elem).css('opacity', '1');
-	$(elem).show();
-	$('.hidden_result').fadeIn();
+	// if(Number(jQuery(elem).css('opacity')) < 1) jQuery(elem).css('opacity', '1');
+	jQuery(elem).show();
+	jQuery('.hidden_result').fadeIn();
 }
 
 //		BFC
@@ -347,7 +347,7 @@ function feetToInches(val) {
 
 function checkData(data) {
 	var e = false;
-	$.each(data, function(i, v){
+	jQuery.each(data, function(i, v){
 		console.log('*:'+v.toString());
 		if(v.toString() == 'NaN' || v.toString() == '0') {
 			e = true;
@@ -363,20 +363,20 @@ function checkData(data) {
 
 function showInfo(obj) {
 	//console.log('*');
-	var id = '#'+$(obj).attr('rel');
-	var top = $(obj).parent().position().top + 'px';	
-	var left = $(obj).parent().position().left + 'px';
+	var id = '#'+jQuery(obj).attr('rel');
+	var top = jQuery(obj).parent().position().top + 'px';	
+	var left = jQuery(obj).parent().position().left + 'px';
 	
-	$(id).css('top', top);
-	$(id).css('left', left);
-	$(id).css('z-index', '100');
-	$(id).fadeIn('fast', null, function(){
-			$(id).click(function(e){
-					$(id).hide();
+	jQuery(id).css('top', top);
+	jQuery(id).css('left', left);
+	jQuery(id).css('z-index', '100');
+	jQuery(id).fadeIn('fast', null, function(){
+			jQuery(id).click(function(e){
+					jQuery(id).hide();
 				});
-			$('.closer').click(function(e){
+			jQuery('.closer').click(function(e){
 					e.preventDefault();
-					$(id).hide();
+					jQuery(id).hide();
 				});
 		});
 }

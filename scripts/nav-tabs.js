@@ -7,7 +7,7 @@ function initTabs(_defaultHash) {
 		var new_hash = jQuery(this).attr('href');
 		new_hash = new_hash.substr(0, new_hash.indexOf('-content'));
 		window.location.hash = new_hash;
-
+		jQuery('#main-container').removeClass('xs-tabs-enabled');
 	});
 	
 	jQuery(window).on('hashchange', function(e){
@@ -15,6 +15,12 @@ function initTabs(_defaultHash) {
 	});
 
 	handleHash();
+
+	jQuery('.show-xs-tabs').on('click', function(event){
+		event.preventDefault();
+		console.log('*');
+		jQuery('#main-container').toggleClass('xs-tabs-enabled');
+	});
 }
 
 function handleHash() {
