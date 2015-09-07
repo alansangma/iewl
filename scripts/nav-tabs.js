@@ -18,8 +18,15 @@ function initTabs(_defaultHash) {
 
 	jQuery('.show-xs-tabs').on('click', function(event){
 		event.preventDefault();
-		console.log('*');
+		
 		jQuery('#main-container').toggleClass('xs-tabs-enabled');
+	});
+
+	jQuery('.navbar-nav>.dropdown>.dropdown-menu>li>a').on('click', function(event){
+		jQuery('.navbar-collapse').removeClass('in');
+		jQuery('.navbar-collapse').attr('aria-expanded', 'false');
+		jQuery('#main-container').removeClass('xs-tabs-enabled');
+		// console.log('*');
 	});
 }
 
