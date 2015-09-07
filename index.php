@@ -10,11 +10,29 @@ include_once('./include/generic_head_bstp.php');
 - weight-loss.php made responsive
 - nav styles
 
-2015-09-05: 3 hours : People and Tools
-2015-09-05: 3.5 hours : Tools
-2015-09-05: 2.5 hours : Contact and debugging and final styling
-2015-09-06: 2 hours : Mobile tabular navigation / homepage changes
+2015-09-05: 3 hours
+- People and Tools
+- styling
+
+2015-09-05: 3.5 hours
+- Tools
+- styling
+
+2015-09-05: 2.5 hours
+- Contact Page
+- debugging
+- styling
+
+2015-09-06: 2 hours
+- Mobile tabular navigation
+- homepage changes
+
+2015-09-06: 1.5 hours
+- nav-tabs fix 
+- tool page rearrangments for mobile
+- "back to top" links
 */
+
 ?>
 <body>
   <?php
