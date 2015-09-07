@@ -2,6 +2,7 @@
 include_once('./include/init.php');
 include_once('./include/generic_head_bstp.php');
 /*
+HOURS
 2015-08-15: 2 hours
 - Index page and responsive
 
