@@ -32,6 +32,10 @@ HOURS
 - nav-tabs fix 
 - tool page rearrangments for mobile
 - "back to top" links
+
+2015-10-04: 3 hours
+- New Weight Loss Page (with all tabs)
+- New Problems Treated Page (with all tabs)
 */
 ?>
 <body>
