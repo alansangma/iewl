@@ -33,7 +33,6 @@ HOURS
 - tool page rearrangments for mobile
 - "back to top" links
 */
-
 ?>
 <body>
   <?php
@@ -85,7 +84,7 @@ HOURS
     <div class="row">
       <div class="col-md-5">
         <h2>Welcome.</h2>
-        <p class="lead">We offer a physician supervised medical weight loss program to help you achieve a healthy weight.  The weight loss program uses a combination of high quality meal replacement products, appetite suppressants, exercise therapy, medication management, and dietary guidance to help you achieve your goals.</p>
+        <p class="lead">We offer a physician supervised medical weight loss program to help you achieve a healthy weight.  The program uses a combination of medical grade meal replacements, appetite suppressants, exercise guidance, medication management, and dietary change to help you achieve your goals.</p>
         <p class="lead">We have flexible scheduling with morning, noon, and early evening appointments available for your convenience.</p>
       </div>
       <div class="clear tall_20 visible-sm visible-xs"></div>
