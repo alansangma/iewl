@@ -46,8 +46,8 @@ $people = array (
 
 $sub_navs = array(
 				'tools'			=> $tools,
-				'people'			=> $people,
-				'news'			=> $news
+				'people'			=> $people/*,
+				'news'			=> $news*/
 			);
 			
 $page_title = 'Welcome';

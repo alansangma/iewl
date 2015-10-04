@@ -7,7 +7,6 @@ function initTabs(_defaultHash) {
 		var new_hash = jQuery(this).attr('href');
 		new_hash = new_hash.substr(0, new_hash.indexOf('-content'));
 		window.location.hash = new_hash;
-		// jQuery('#main-container').removeClass('xs-tabs-enabled');
 	});
 	
 	jQuery(window).on('hashchange', function(e){
@@ -33,6 +32,7 @@ function initTabs(_defaultHash) {
 function handleHash() {
 	var hash = window.location.hash.substr(1);
 	hash = hash.length==0 ? defaultHash : hash;
+	console.log(hash);
 	jQuery('#main-container').removeClass('xs-tabs-enabled');
 	jQuery('.navbar-collapse').removeClass('in');
 	jQuery('.navbar-collapse').attr('aria-expanded', 'false');
