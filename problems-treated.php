@@ -32,7 +32,7 @@ include_once('./include/generic_head_bstp.php');
 					<a class="tab-nav-link" href="#hypertension-content" data-toggle="tab">Hypertension</a>
 				</li>
 				<li id="osteoarthritis-nav">
-					<a class="tab-nav-link" href="#osteoarthritis-content" data-toggle="tab">Osteoarthritis &amp; PCOS</a>
+					<a class="tab-nav-link" href="#osteoarthritis-content" data-toggle="tab">Osteoarthritis</a>
 				</li>
 				<li id="pcos-nav">
 					<a class="tab-nav-link" href="#pcos-content" data-toggle="tab">PCOS</a>
