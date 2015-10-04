@@ -16,37 +16,58 @@ $is_home = (strpos($php_self, 'index.php') > 0) ? 1 : 0;
 $is_footer = false;
 
 $pages = array(
-				'home'			=> 'index.php',
+				'home'				=> 'index.php',
 				'weight loss'		=> 'weight-loss.php',
-				'tools'			=> 'tools.php',
+				'problems treated' 	=> 'problems-treated.php',
+				'tools'				=> 'tools.php',
 				'people'			=> 'people.php',
 				//'news'			=> 'news.php',
 				'contact'			=> 'contact.php'
 			);
 			
 $tools = array (
-				'bmi'			=> 'bmi',
+				'bmi'				=> 'bmi',
 				'ideal weight'		=> 'ideal-weight',
 				'waist/hip ratio'	=> 'waist-hip-ratio',
-				'body fat'		=> 'body-fat',
+				'body fat'			=> 'body-fat',
 			);
 			
 $people = array (
-				'staff'			=> 'staff',
+				'staff'				=> 'staff',
 				'recognition'		=> 'recognition',
-				'partners'		=> 'partners',
+				'partners'			=> 'partners',
 				'success stories'	=> 'success-stories'
+			);
+$weightloss = array (
+				'who we are'		=> 'who-we-are',
+				'pediatric weight loss' => 'pediatric-weight-loss',
+				'obesity medicine'	=> 'obesity-medicine',
+				'forms'				=> 'forms',
+				'corporate program' => 'corporate-program'
 			);
 			
 // $news = array (
 // 				'office news'		=> 'office-news',
 // 				'weightloss news'	=> 'weightloss-news'
 // 			);
-			
+	
+$problems = array(
+				'diabetes insulin resistance'	=> 'diabetes-insulin-resistance',
+				'hypertension'		=> 'hypertension',
+				'osteoarthritis'	=> 'osteoarthritis',
+				'pcos'				=> 'pcos',
+				'pre/post operative management'	=> 'pre-post-operative-management',
+				'other conditions'	=> 'other-conditions'
+				);
+
+
 
 $sub_navs = array(
-				'tools'			=> $tools,
-				'people'			=> $people/*,
+				'tools'				=> $tools,
+				'people'			=> $people,
+				'weight loss'		=> $weightloss,
+				'problems treated'	=> $problems
+				/*,
 				'news'			=> $news*/
 			);
 			

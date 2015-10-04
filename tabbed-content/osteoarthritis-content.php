@@ -1,0 +1,3 @@
+<div class="col-md-12">
+	<p>Osteoarthritis or simply arthritis of the weight bearing joints has been shown to be significantly increased in people suffering from obesity.  It has also been shown that reductions in even modest amounts of weight (10 pounds) can significantly improve the symptoms and radiological changes associated with arthritis.  Our experience in helping people to lose weight is consistent with these findings. We have even had patients who were prepared to have knee replacement surgery then realize after losing weight that they did not need to have surgery.  If you are looking to improve the symptoms of your Osteoarthritis or to be free of chronic anti-inflammatory medications, then we look forward to helping you. </p>			
+</div>
