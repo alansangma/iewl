@@ -943,7 +943,7 @@ p.no_left_margin {
 	line-height:1.2em;
 	border:none;
 	display:block;
-	margin:0 0 0 0px;
+	margin:1rem 0 0 0px;
 	}
 
 .big_hat {
@@ -1112,6 +1112,10 @@ p.columns_3 {
 	height: 0px;
 	display: block;
 	clear:both;
+}
+
+.form-module {
+	min-height: 100px;
 }
 
 /*.bordered_grid h4 {
