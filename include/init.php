@@ -16,11 +16,11 @@ $is_home = (strpos($php_self, 'index.php') > 0) ? 1 : 0;
 $is_footer = false;
 
 $pages = array(
-				//'home'			=> 'index.php',
+				'home'			=> 'index.php',
 				'weight loss'		=> 'weight-loss.php',
 				'tools'			=> 'tools.php',
 				'people'			=> 'people.php',
-				'news'			=> 'news.php',
+				//'news'			=> 'news.php',
 				'contact'			=> 'contact.php'
 			);
 			
@@ -38,10 +38,10 @@ $people = array (
 				'success stories'	=> 'success-stories'
 			);
 			
-$news = array (
-				'office news'		=> 'office-news',
-				'weightloss news'	=> 'weightloss-news'
-			);
+// $news = array (
+// 				'office news'		=> 'office-news',
+// 				'weightloss news'	=> 'weightloss-news'
+// 			);
 			
 
 $sub_navs = array(

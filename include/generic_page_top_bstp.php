@@ -6,7 +6,7 @@
         <span class="sr-only">Toggle navigation</span>
         <i class="fa fa-bars"></i>
       </button>
-      <a class="navbar-brand" href="http://inlandempireweightloss.com" id="iewl-navbar-brand">
+      <a class="navbar-brand" href="index.php" id="iewl-navbar-brand">
            <img src="./graphics/inland-empire-weightloss-logo-20140701.png" alt="">
       </a>
     </div>

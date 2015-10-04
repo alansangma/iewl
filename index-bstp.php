@@ -2,7 +2,6 @@
 include_once('./include/init.php');
 include_once('./include/generic_head_bstp.php');
 /*
-HOURS
 2015-08-15: 2 hours
 - Index page and responsive
 
@@ -10,30 +9,7 @@ HOURS
 - Index page fixes
 - weight-loss.php made responsive
 - nav styles
-
-2015-09-05: 3 hours
-- People and Tools
-- styling
-
-2015-09-05: 3.5 hours
-- Tools
-- styling
-
-2015-09-05: 2.5 hours
-- Contact Page
-- debugging
-- styling
-
-2015-09-06: 2 hours
-- Mobile tabular navigation
-- homepage changes
-
-2015-09-06: 1.5 hours
-- nav-tabs fix 
-- tool page rearrangments for mobile
-- "back to top" links
 */
-
 ?>
 <body>
   <?php
@@ -96,8 +72,7 @@ HOURS
         <img src='http://offsiteSchedule.zocdoc.com/images/remote/powered-by-light.png' height='15px' width='92px' alt='Powered by ZocDoc Doctor Directory' /></a>
         <div class="clear tall_10"></div>
         <h4><a href="contact.php" title="Contact">Contact</a></h4>
-        4646 Brockton Avenue<br />
-        Suite 302<br/>
+        4646 Brockton Avenue, Ste 302<br />
         Riverside, CA 92506<br />
         (951) 231-1363 or<br />
         (951) 774-2723<br />
@@ -126,15 +101,11 @@ HOURS
         <p style="color:#308fbf;font-size:10px;">We schedule during lunch on Mondays and Tuesdays!</p>
       </div>
       <div class="clear tall_40 visible-sm visible-xs"></div>
-      <div class="col-md-4 col-md-pull-1 iewl-certs">
-        <h3>Certifications &amp; Memberships</h3>
-        <a title="American Board of Obesity Medicine" href="http://abom.org"> <img title="American Board of Obesity Medicine - Certified Diplomate"
-        src="http://abom.org/wp-content/uploads/ABOM_DIPLOMATE_BADGE_small.jpg" alt="American Board of Obesity Medicine - Certified Diplomate" /> </a>
-        <a title="American Board of Family Medicine" href="http://theabfm.org"> <img title="American Board of Family Medicine - Diplomate"
-        src="https://www.theabfm.org/_images/logo_abfm.gif"  alt="American Board of Family Medicine - Diplomate" /> </a>
+      <div class="col-md-5 col-md-pull-2">
+        <h3>Memberships</h3>
         <a href="http://asbp.org/siterun_data/about_asbp/" title="American Society of Bariatric Physicians" href="http://asbp.org">
         <img src="http://dev.asbp.org/images/badges/absp.120x120.png" alt="ASBP.org" style="border:none;" src="images/badges/absp.120x120.png" style="border: none;" /></a>
-        <ul>
+        <ul style="margin-top:20px;">
           <li>Member:  <a href="https://www.asbp.org/" title="American Society of Bariatric Physicians" target="_blank">American Society of Bariatric Physicians</a></li>
           <li>Member:  <a href="http://www.obesityaction.org/obesity-treatments/find-a-physician-or-surgeon" title="OAC Find a Physician Page" targe="_blank">Obesity Action Coalition</a></li>
           <li>Member:  <a href="http://overcomeobesitynow.org/" title="NOON external page link" target="_blank">Network to Overcome Obesity Now</a></li>
@@ -148,8 +119,16 @@ HOURS
     </div>
     <div class="clear tall_40"></div>
     <div class="row">
+      <div class="col-md-5 col-md-push-5 iewl-certs">
+        <h3>Certifications</h3>
+        <a title="American Board of Obesity Medicine" href="http://abom.org"> <img title="American Board of Obesity Medicine - Certified Diplomate"
+        src="http://abom.org/wp-content/uploads/ABOM_DIPLOMATE_BADGE_small.jpg" alt="American Board of Obesity Medicine - Certified Diplomate" /> </a>
+        <br />
+        <a title="American Board of Family Medicine" href="http://theabfm.org"> <img title="American Board of Family Medicine - Diplomate"
+        src="https://www.theabfm.org/_images/logo_abfm.gif"  alt="American Board of Family Medicine - Diplomate" /> </a>
+      </div>
       <div class="clear tall_40 visible-sm visible-xs"></div>
-      <div class="col-md-12 iewl-social">
+      <div class="col-md-5 col-md-pull-5 iewl-social">
         <h3>Our Social Network</h3>
         <ul>
           <li><a href="http://www.facebook.com/pages/Inland-Empire-Weight-Loss/151698548219925" title="Like us on Facebook" target="_blank" class="facebook_home">Like us on Facebook!</a></li>
