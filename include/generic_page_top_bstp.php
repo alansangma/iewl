@@ -7,7 +7,7 @@
         <i class="fa fa-bars"></i>
       </button>
       <a class="navbar-brand" href="index.php" id="iewl-navbar-brand">
-           <img src="./graphics/inland-empire-weightloss-logo-20140701.png" alt="">
+           <img src="<?php echo $relative_path; ?>graphics/inland-empire-weightloss-logo-20140701.png" alt="">
       </a>
     </div>
 
@@ -15,7 +15,7 @@
     <div class="collapse navbar-collapse" id="iewl-navbar-collapse">
 
       <ul class="nav navbar-nav navbar-right">
-      <?php include('./include/navigation_bstp.php'); ?>
+      <?php include($relative_path.'include/navigation_bstp.php'); ?>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

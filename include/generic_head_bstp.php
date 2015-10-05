@@ -18,9 +18,9 @@
 <meta name="copyright" content="<?php echo date('Y'); ?>" />
 <!--////////////////////////////////////////////////////////////-->
 <!--                         STYLE                              -->
-<link rel="stylesheet" type="text/css" href="./css/reset.css" />
-<link rel="stylesheet" type="text/css" href="./css/text.css" />
-<!-- <link rel="stylesheet" type="text/css" href="./css/960.css" /> -->
+<link rel="stylesheet" type="text/css" href="<?php echo $relative_path;?>css/reset.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo $relative_path;?>css/text.css" />
+<!-- <link rel="stylesheet" type="text/css" href="<?php echo $relative_path;?>css/960.css" /> -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -28,8 +28,8 @@
 <!-- Optional theme -->
 <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> -->
 
-<link rel="stylesheet" type="text/css" href="./css/screen.css" />
-<link rel="stylesheet" type="text/css" href="./css/style-bstp.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo $relative_path;?>css/screen.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo $relative_path;?>css/style-bstp.css" />
 
 <!--                         STYLE                              -->
 <!--////////////////////////////////////////////////////////////-->
@@ -40,12 +40,12 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-<script type="text/javascript" language="javascript" src="./scripts/sub_navs.js"></script>
-<?php /*if($is_home) echo '<script type="text/javascript" language="javascript" src="./scripts/jquery.cycle.all.min.js"></script>
-<script type="text/javascript" language="javascript" src="./scripts/home_slides.js"></script>';
-if(strpos($php_self, 'tools.php') || strpos($php_self, 'people.php') || strpos($php_self, 'news.php')) echo '<script type="text/javascript" language="javascript" src="./scripts/ajax_content.js"></script>
+<script type="text/javascript" language="javascript" src="<?php echo $relative_path;?>scripts/sub_navs.js"></script>
+<?php /*if($is_home) echo '<script type="text/javascript" language="javascript" src="<?php echo $relative_path;?>scripts/jquery.cycle.all.min.js"></script>
+<script type="text/javascript" language="javascript" src="<?php echo $relative_path;?>scripts/home_slides.js"></script>';
+if(strpos($php_self, 'tools.php') || strpos($php_self, 'people.php') || strpos($php_self, 'news.php')) echo '<script type="text/javascript" language="javascript" src="<?php echo $relative_path;?>scripts/ajax_content.js"></script>
 ';
-if(strpos($php_self, 'weight-loss.php')) echo '<script type="text/javascript" language="javascript" src="./scripts/row_height.js"></script>';*/
+if(strpos($php_self, 'weight-loss.php')) echo '<script type="text/javascript" language="javascript" src="<?php echo $relative_path;?>scripts/row_height.js"></script>';*/
 ?>
 <script type="text/javascript" language="javascript">
 $(document).ready(function(){

@@ -29,7 +29,8 @@ if(!$is_ie7) {
 		$anchorClass = ((strpos($php_self, $url) && !$is_footer) ? 'current' : 'not_current');
 		$anchorClass = (array_key_exists($pageName, $sub_navs) && !$is_footer) ? $anchorClass.' sub_nav_anchor' : $anchorClass;
 		
-		$anchorString = ((strpos($php_self, $url)) ? '' : 'href="'.$url.'"' );
+		//$anchorString = ((strpos($php_self, $url)) ? '' : 'href="'.$url.'"' );
+		$anchorString = 'href="'.$url.'"' );
 		$id_for_sub = str_replace(' ', '_', $pageName);
 			
 		echo "\n\t\t\t<li><a class=\"{$anchorClass}\" {$anchorString} rel=\"{$id_for_sub}\">".strtoupper($pageName)."</a>";

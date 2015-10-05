@@ -18,7 +18,7 @@
 		
 		if((array_key_exists($pageName, $sub_navs) && !$is_footer)) {
 			echo '<li class="dropdown">';
-				echo '<a href="'.$anchorString.'" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">'.strtoupper($pageName).' <span class="caret"></span></a>';
+				echo '<a href="'.$relative_path.$anchorString.'" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">'.strtoupper($pageName).' <span class="caret"></span></a>';
 				echo '<ul class="dropdown-menu">';
 			$subArray = $sub_navs[$pageName];
 			foreach($subArray as $subName=>$subLink) {

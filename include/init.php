@@ -1,5 +1,6 @@
 <?php
-require_once('./include/config.php');
+$relative_path = isset($relative_path) ? $relative_path : './';
+require_once($relative_path.'include/config.php');
 
 $php_self = strtolower($_SERVER['PHP_SELF']);	 //	Where we at?
 $user_agent = strtolower($_SERVER['HTTP_USER_AGENT']);
