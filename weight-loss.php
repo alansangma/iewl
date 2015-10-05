@@ -33,6 +33,9 @@ include_once('./include/generic_head_bstp.php');
 				<li id="corporate-program-nav">
 					<a class="tab-nav-link" href="#corporate-program-content" data-toggle="tab">Corporate Program</a>
 				</li>
+				<li id="providers-nav">
+					<a class="tab-nav-link" href="#providers-content" data-toggle="tab">For Providers</a>
+				</li>
 				<!-- <li id="problems-treated-nav">
 					<a class="tab-nav-link" href="#problems-treated-content" data-toggle="tab">Problems Treated</a>
 				</li> -->
@@ -46,7 +49,7 @@ include_once('./include/generic_head_bstp.php');
 				<div class="tab-pane" id="who-we-are-content">
 					<div class="row">
 						<div class="col-xs-12 visible-xs show-xs-tabs-wrap">
-							<h2 class="show-xs-tabs">Who We Are <i class="fa fa-caret-down"></i></h2>
+							<h2 class="show-xs-tabs">Who We Are </h2>
 						</div>
 						<div class="clear tall_20 visible-xs"></div>
 					</div>
@@ -57,7 +60,7 @@ include_once('./include/generic_head_bstp.php');
 				<div class="tab-pane" id="pediatric-weight-loss-content">
 					<div class="row">
 						<div class="col-xs-12 visible-xs show-xs-tabs-wrap">
-							<h2 class="show-xs-tabs">Pediatric Weight Loss <i class="fa fa-caret-down"></i></h2>
+							<h2 class="show-xs-tabs">Pediatric Weight Loss </h2>
 						</div>
 						<div class="clear tall_20 visible-xs"></div>
 					</div>
@@ -68,7 +71,7 @@ include_once('./include/generic_head_bstp.php');
 				<div class="tab-pane" id="obesity-medicine-content">
 					<div class="row">
 						<div class="col-xs-12 visible-xs show-xs-tabs-wrap">
-							<h2 class="show-xs-tabs">Obesity Medicine <i class="fa fa-caret-down"></i></h2>
+							<h2 class="show-xs-tabs">Obesity Medicine </h2>
 						</div>
 						<div class="clear tall_20 visible-xs"></div>
 					</div>
@@ -79,7 +82,7 @@ include_once('./include/generic_head_bstp.php');
 				<div class="tab-pane" id="forms-content">
 					<div class="row">
 						<div class="col-xs-12 visible-xs show-xs-tabs-wrap">
-							<h2 class="show-xs-tabs">Forms <i class="fa fa-caret-down"></i></h2>
+							<h2 class="show-xs-tabs">Forms </h2>
 						</div>
 						<div class="clear tall_20 visible-xs"></div>
 					</div>
@@ -90,7 +93,7 @@ include_once('./include/generic_head_bstp.php');
 				<div class="tab-pane" id="corporate-program-content">
 					<div class="row">
 						<div class="col-xs-12 visible-xs show-xs-tabs-wrap">
-							<h2 class="show-xs-tabs">Corporate Program <i class="fa fa-caret-down"></i></h2>
+							<h2 class="show-xs-tabs">Corporate Program </h2>
 						</div>
 						<div class="clear tall_20 visible-xs"></div>
 					</div>
@@ -98,17 +101,17 @@ include_once('./include/generic_head_bstp.php');
 						<?php include('tabbed-content/corporate-program-content.php'); ?>
 					</div>
 				</div>
-				<!-- <div class="tab-pane" id="problems-treated-content">
+				<div class="tab-pane" id="providers-content">
 					<div class="row">
 						<div class="col-xs-12 visible-xs show-xs-tabs-wrap">
-							<h2 class="show-xs-tabs">Problems Treated <i class="fa fa-caret-down"></i></h2>
+							<h2 class="show-xs-tabs">For Providers </h2>
 						</div>
 						<div class="clear tall_20 visible-xs"></div>
 					</div>
 					<div class="row">
-						<?php include('tabbed-content/problems-treated-content.php'); ?>
+						<?php include('tabbed-content/providers-content.php'); ?>
 					</div>
-				</div> -->
+				</div>
 			</div>
 		</div>
 	</div>

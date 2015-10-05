@@ -43,7 +43,8 @@ $weightloss = array (
 				'pediatric weight loss' => 'pediatric-weight-loss',
 				'obesity medicine'	=> 'obesity-medicine',
 				'forms'				=> 'forms',
-				'corporate program' => 'corporate-program'
+				'corporate program' => 'corporate-program',
+				'for providers'		=> 'providers'
 			);
 			
 // $news = array (

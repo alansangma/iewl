@@ -1,10 +1,10 @@
 <div class="col-md-12">
 	<div class="row">
 		<div class="col-md-6">
-			<p>At <strong>Inland Empire Weight Loss</strong>, we are not your standard weight loss clinic. We are professionals in Obesity Medicine. The field of Obesity Medicine is the science of weight loss and our governing societies are The American Society of Bariatric Physicians (<a href="www.asbp.org" target="_blank" title="The American Society of Bariatric Physicians">www.asbp.org</a>) and The American Board of Obesity Medicine. We are bound to adhere to the guidelines set forth by the ASBP. Inland Empire Weight Loss has trained providers to assist you in your individualized weight loss plan.</p>
+			<p>At <strong>Inland Empire Weight Loss</strong>, we are not your standard weight loss clinic. We are professionals in Obesity Medicine. The field of Obesity Medicine is the science of weight loss and our governing societies are the Obesity Medicine Association(<a href="www.asbp.org" target="_blank" title="Obesity Medicine Association">www.asbp.org</a>) and The American Board of Obesity Medicine. We are bound to adhere to the guidelines set forth by the OMA. Inland Empire Weight Loss has trained providers to assist you in your individualized weight loss plan.</p>
 		</div>
 		<div class="col-md-6">
-			<p>Our training in this area is rigorous and is based on research and medical guidelines in the field of Obesity Medicine. We have had extensive training from The ASBP (<a href="www.asbp.org" target="_blank" title="The American Society of Bariatric Physicians">www.asbp.org</a>) in designing an individualized plan to help you lose weight and become healthier. We have programs available to treat adults as well as <a href="#pediatric-weight-loss">children</a>.</p>	
+			<p>Our training in this area is rigorous and is based on research and medical guidelines in the field of Obesity Medicine. We have had extensive training from The OMA (<a href="www.asbp.org" target="_blank" title="Obesity Medicine Association">www.asbp.org</a>) in designing an individualized plan to help you lose weight and become healthier. We have programs available to treat adults as well as <a href="#pediatric-weight-loss">children</a>.</p>	
 		</div>
 	</div>
 

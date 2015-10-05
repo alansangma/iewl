@@ -77,7 +77,7 @@ mysql_close($connection);*/
           <h3>Who We Are:</h3>
           <div style="display:inline; float:right; width:25%;">
           </div>
-          <p>At Inland Empire Weight Loss, we are not your standard weight loss clinic.  We are professionals in Obesity Medicine.   The field of Obesity Medicine is the science of weight loss and our governing societies are The American Society of Bariatric Physicians (<a href="http://www.asbp.org" target="_blank">www.asbp.org</a>) and  <a href="http://www.abom.org/" title="American Board of Obesity Medicine" target="_blank">The American Board of Obesity Medicine</a>.  We are bound to adhere to the <a href="#guidelines" title="Go to ASBP Guidelines">guidelines</a> set forth by the ASBP.  Inland Empire Weight Loss has trained providers to assist you in your individualized weight loss plan.  Our training in this area is rigorous and is based on research and medical guidelines in the field of Obesity Medicine.  We have had extensive training from The ASBP (<a href="http://www.asbp.org" target="_blank">www.asbp.org</a>) in designing an individualized plan to help you lose weight and become healthier.  
+          <p>At Inland Empire Weight Loss, we are not your standard weight loss clinic.  We are professionals in Obesity Medicine.   The field of Obesity Medicine is the science of weight loss and our governing societies are The Obesity Medicine Association(<a href="http://www.asbp.org" target="_blank">www.asbp.org</a>) and  <a href="http://www.abom.org/" title="American Board of Obesity Medicine" target="_blank">The American Board of Obesity Medicine</a>.  We are bound to adhere to the <a href="#guidelines" title="Go to OMA Guidelines">guidelines</a> set forth by the OMA.  Inland Empire Weight Loss has trained providers to assist you in your individualized weight loss plan.  Our training in this area is rigorous and is based on research and medical guidelines in the field of Obesity Medicine.  We have had extensive training from The OMA (<a href="http://www.asbp.org" target="_blank">www.asbp.org</a>) in designing an individualized plan to help you lose weight and become healthier.  
      	 </p>
           
           <hr />
@@ -140,8 +140,8 @@ mysql_close($connection);*/
           	<a href="documents/InformedConsentWeightLoss.pdf" title="Informed Consent" target="_blank" class="pdf_link">Informed Consent</a>
           </div>
           <div class="grid_2 push_1" style="text-align:center;" id="guidelines">
-               <a href="documents/ASBPGuidelinesForOverweightAndObesityEvaluationManagement.pdf" title="ASBP Guidelines For Overweight And Obesity Evaluation Management" target="_blank" class="pdf"><img src="graphics/pdf-icon.png" title="ASBP Guidelines For Overweight And Obesity Evaluation Management" width="60" height="60"  /></a>
-               <a href="documents/ASBPGuidelinesForOverweightAndObesityEvaluationManagement.pdf" title="ASBP Guidelines For Overweight And Obesity Evaluation Management" target="_blank" class="pdf_link">ASBP Guidelines</a>
+               <a href="documents/ASBPGuidelinesForOverweightAndObesityEvaluationManagement.pdf" title="OMA Guidelines For Overweight And Obesity Evaluation Management" target="_blank" class="pdf"><img src="graphics/pdf-icon.png" title="OMA Guidelines For Overweight And Obesity Evaluation Management" width="60" height="60"  /></a>
+               <a href="documents/ASBPGuidelinesForOverweightAndObesityEvaluationManagement.pdf" title="OMA Guidelines For Overweight And Obesity Evaluation Management" target="_blank" class="pdf_link">OMA Guidelines</a>
           </div>          
           
           <div class="grid_5">
