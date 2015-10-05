@@ -36,6 +36,9 @@ HOURS
 2015-10-04: 3 hours
 - New Weight Loss Page (with all tabs)
 - New Problems Treated Page (with all tabs)
+2015-10-04: 2 hours
+- Fixed Link Errors
+- Added Reviews Page
 */
 ?>
 <body>
