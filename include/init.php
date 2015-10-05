@@ -12,8 +12,8 @@ $is_firefox = (strpos($user_agent, 'firefox') > 0 ? 1 : 0);
 //echo '<!-- user_agent'. $user_agent . '-->';
 
 
-$is_home = (strpos($php_self, 'index.php') > 0) ? 1 : 0;
-
+$is_home = (strpos($php_self, 'index.php') > 0 ) ? 1 : 0;
+//echo strpos($php_self, 'reviews');
 $is_footer = false;
 
 $pages = array(

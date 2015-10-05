@@ -14,16 +14,17 @@
 		$activeClass = ((strpos($php_self, $url)) ? 'active' : '');
 		//$dropdownCount = 0;
 		
-		$anchorString = ((strpos($php_self, $url)) ? '' : $url );
+		//$anchorString = ((strpos($php_self, $url)) ? '' : $relative_path.$url );
+		$anchorString = $relative_path.$url;
 		
 		if((array_key_exists($pageName, $sub_navs) && !$is_footer)) {
 			echo '<li class="dropdown">';
-				echo '<a href="'.$relative_path.$anchorString.'" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">'.strtoupper($pageName).' <span class="caret"></span></a>';
+				echo '<a href="'.$anchorString.'" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">'.strtoupper($pageName).' <span class="caret"></span></a>';
 				echo '<ul class="dropdown-menu">';
 			$subArray = $sub_navs[$pageName];
 			foreach($subArray as $subName=>$subLink) {
 				echo '
-						<li><a href="'.$url.'#'.$subLink.'">'.strtoupper($subName).'</a></li>';
+						<li><a href="'.$relative_path.$url.'#'.$subLink.'">'.strtoupper($subName).'</a></li>';
 			}
 			echo '</ul>';
 			//$dropdownCount++;
