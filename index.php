@@ -39,6 +39,17 @@ HOURS
 2015-10-04: 2 hours
 - Fixed Link Errors
 - Added Reviews Page
+
+
+2015-10-10 : 1 hour
+- Added missing link(s) to Reviews Page
+- Added social links to footer
+- Ensured all pages had footer
+- Added new social links to homepage
+- Updated homepage layout
+- Added logic to hide footer social links on homepage
+- Nixed tab navigation pills in mobile viewport
+- Added sub-headers for tabbed content in mobile viewport
 */
 ?>
 <body>
