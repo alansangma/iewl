@@ -51,10 +51,10 @@ include_once('../include/generic_head_bstp.php');
       <div class="row  panel panel-default text-center">
         
         <!-- <div class="col-md-3"><a href="https://www.facebook.com/Inland-Empire-Weight-Loss-151698548219925/timeline/" target="_blank" title="Review us on Facebook"><i class="fa fa-facebook-official fa-4x"></i><br/>Facebook</a></div> -->
-        <div class="col-md-3"><a href="https://www.facebook.com/Inland-Empire-Weight-Loss-151698548219925/reviews/" target="_blank" title="Review us on Facebook"><i class="fa fa-facebook-official fa-4x"></i><br/>Facebook</a></div>
-        <div class="col-md-3"><a href="http://www.yelp.com/biz/inland-empire-weight-loss-riverside" target="_blank" title="Review us on Yelp"><i class="fa fa-yelp fa-4x"></i><br/>Yelp</a></div>
-        <div class="col-md-3"><a href="https://plus.google.com/104480320535500046323/posts" target="_blank" title="Review us on Google Plus"><i class="fa fa-google-plus fa-4x"></i><br/>Google Plus</a></div>
-        <div class="col-md-3"><a href="https://local.yahoo.com/info-78612946-inland-empire-weight-loss-riverside" target="_blank" title="Review us on Yahoo!"><i class="fa fa-yahoo fa-4x"></i><br/>Yahoo!</a></div>
+        <div class="col-sm-3 review-link"><a href="https://www.facebook.com/Inland-Empire-Weight-Loss-151698548219925/reviews/" target="_blank" title="Review us on Facebook"><i class="fa fa-facebook-official fa-4x"></i><br/>Facebook</a></div>
+        <div class="col-sm-3 review-link"><a href="http://www.yelp.com/biz/inland-empire-weight-loss-riverside" target="_blank" title="Review us on Yelp"><i class="fa fa-yelp fa-4x"></i><br/>Yelp</a></div>
+        <div class="col-sm-3 review-link"><a href="https://plus.google.com/104480320535500046323/posts" target="_blank" title="Review us on Google Plus"><i class="fa fa-google-plus fa-4x"></i><br/>Google Plus</a></div>
+        <div class="col-sm-3 review-link"><a href="https://local.yahoo.com/info-78612946-inland-empire-weight-loss-riverside" target="_blank" title="Review us on Yahoo!"><i class="fa fa-yahoo fa-4x"></i><br/>Yahoo!</a></div>
       </div>
     </div>
   </div>

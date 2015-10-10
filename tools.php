@@ -38,44 +38,36 @@ include_once('./include/generic_head_bstp.php');
 
 			<div class="tab-content">
 				<div class="tab-pane" id="bmi-content">
-					<div class="row">
-						<div class="col-xs-12 visible-xs show-xs-tabs-wrap">
-							<h2 class="show-xs-tabs">BMI <i class="fa fa-caret-down"></i></h2>
-						</div>
-						<div class="clear tall_20 visible-xs"></div>
+					<div class="col-md-12 text-center visible-xs">
+						<h3>BMI </h3>
+						<hr>
 					</div>
 					<div class="row">
 					<?php include('tabbed-content/bmi-content.php'); ?>
 					</div>
 				</div>
 				<div class="tab-pane" id="ideal-weight-content">
-					<div class="row">
-						<div class="col-xs-12 visible-xs show-xs-tabs-wrap">
-							<h2 class="show-xs-tabs">Ideal Weight <i class="fa fa-caret-down"></i></h2>
-						</div>
-						<div class="clear tall_20 visible-xs"></div>
+					<div class="col-md-12 text-center visible-xs">
+						<h3>Ideal Weight </h3>
+						<hr>
 					</div>
 					<div class="row">
 						<?php include('tabbed-content/ideal-weight-content.php'); ?>
 					</div>
 				</div>
 				<div class="tab-pane" id="waist-hip-ratio-content">
-					<div class="row">
-						<div class="col-xs-12 visible-xs show-xs-tabs-wrap">
-							<h2 class="show-xs-tabs">Waist/Hip Ratio <i class="fa fa-caret-down"></i></h2>
-						</div>
-						<div class="clear tall_20 visible-xs"></div>
+					<div class="col-md-12 text-center visible-xs">
+						<h3>Waist/Hip Ratio </h3>
+						<hr>
 					</div>
 					<div class="row">
 					<?php include('tabbed-content/waist-hip-ratio-content.php'); ?>
 					</div>
 				</div>
 				<div class="tab-pane" id="body-fat-content">
-					<div class="row">
-						<div class="col-xs-12 visible-xs show-xs-tabs-wrap">
-							<h2 class="show-xs-tabs">Body Fat <i class="fa fa-caret-down"></i></h2>
-						</div>
-						<div class="clear tall_20 visible-xs"></div>
+					<div class="col-md-12 text-center visible-xs">
+						<h3>Body Fat </h3>
+						<hr>
 					</div>
 					<div class="row">
 						<?php include('tabbed-content/body-fat-content.php'); ?>
@@ -94,7 +86,7 @@ include_once('./include/generic_head_bstp.php');
   ?>
   <!--               FOOTER                   -->
   <!--////////////////////////////////////////-->
-  
+
 <!-- Google Code for Tools Conversion Page -->
 <script type="text/javascript">
 /* <![CDATA[ */

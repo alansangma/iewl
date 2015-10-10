@@ -36,44 +36,36 @@ include_once('./include/generic_head_bstp.php');
 				<?php require_once('include/config.php'); ?>
 				<div class="tab-content">
 					<div class="tab-pane" id="staff-content">
-						<div class="row">
-							<div class="col-xs-12 visible-xs show-xs-tabs-wrap">
-								<h2 class="show-xs-tabs">Staff <i class="fa fa-caret-down"></i></h2>
-							</div>
-							<div class="clear tall_20 visible-xs"></div>
+						<div class="col-md-12 text-center visible-xs">
+							<h3>Staff </h3>
+							<hr>
 						</div>
 						<div class="row">
 							<?php include('tabbed-content/staff-content.php'); ?>
 						</div>
 					</div>
 					<div class="tab-pane" id="recognition-content">
-						<div class="row">
-							<div class="col-xs-12 visible-xs show-xs-tabs-wrap">
-								<h2 class="show-xs-tabs">Recognition <i class="fa fa-caret-down"></i></h2>
-							</div>
-							<div class="clear tall_20 visible-xs"></div>
+						<div class="col-md-12 text-center visible-xs">
+							<h3>Recognition </h3>
+							<hr>
 						</div>
 						<div class="row">
 							<?php include('tabbed-content/recognition-content.php'); ?>
 						</div>
 					</div>
 					<div class="tab-pane" id="partners-content">
-						<div class="row">
-							<div class="col-xs-12 visible-xs show-xs-tabs-wrap">
-								<h2 class="show-xs-tabs">Partners <i class="fa fa-caret-down"></i></h2>
-							</div>
-							<div class="clear tall_20 visible-xs"></div>
+						<div class="col-md-12 text-center visible-xs">
+							<h3>Partners </h3>
+							<hr>
 						</div>
 						<div class="row">
 							<?php include('tabbed-content/partners-content.php'); ?>
 						</div>
 					</div>
 					<div class="tab-pane" id="success-stories-content">
-						<div class="row">
-							<div class="col-xs-12 visible-xs show-xs-tabs-wrap">
-								<h2 class="show-xs-tabs">Success Stories <i class="fa fa-caret-down"></i></h2>
-							</div>
-							<div class="clear tall_20 visible-xs"></div>
+						<div class="col-md-12 text-center visible-xs">
+							<h3>Success Stories </h3>
+							<hr>
 						</div>
 						<div class="row">
 							<?php include('tabbed-content/success-stories-content.php'); ?>

@@ -15,11 +15,11 @@ function initTabs(_defaultHash) {
 
 	handleHash();
 
-	jQuery('.show-xs-tabs').on('click', function(event){
-		event.preventDefault();
+	// jQuery('.show-xs-tabs').on('click', function(event){
+	// 	event.preventDefault();
 		
-		jQuery('#main-container').toggleClass('xs-tabs-enabled');
-	});
+	// 	jQuery('#main-container').toggleClass('xs-tabs-enabled');
+	// });
 
 	jQuery('.navbar-nav>.dropdown>.dropdown-menu>li>a').on('click', function(event){
 		jQuery('.navbar-collapse').removeClass('in');

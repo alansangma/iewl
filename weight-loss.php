@@ -47,66 +47,54 @@ include_once('./include/generic_head_bstp.php');
 
 			<div class="tab-content">
 				<div class="tab-pane" id="who-we-are-content">
-					<div class="row">
-						<div class="col-xs-12 visible-xs show-xs-tabs-wrap">
-							<h2 class="show-xs-tabs">Who We Are </h2>
-						</div>
-						<div class="clear tall_20 visible-xs"></div>
+					<div class="col-md-12 text-center visible-xs">
+						<h3>Who We Are</h3>
+						<hr>
 					</div>
 					<div class="row">
 					<?php include('tabbed-content/who-we-are-content.php'); ?>
 					</div>
 				</div>
 				<div class="tab-pane" id="pediatric-weight-loss-content">
-					<div class="row">
-						<div class="col-xs-12 visible-xs show-xs-tabs-wrap">
-							<h2 class="show-xs-tabs">Pediatric Weight Loss </h2>
-						</div>
-						<div class="clear tall_20 visible-xs"></div>
+					<div class="col-md-12 text-center visible-xs">
+						<h3>Pediatric Weight Loss</h3>
+						<hr>
 					</div>
 					<div class="row">
 						<?php include('tabbed-content/pediatric-weight-loss-content.php'); ?>
 					</div>
 				</div>
 				<div class="tab-pane" id="obesity-medicine-content">
-					<div class="row">
-						<div class="col-xs-12 visible-xs show-xs-tabs-wrap">
-							<h2 class="show-xs-tabs">Obesity Medicine </h2>
-						</div>
-						<div class="clear tall_20 visible-xs"></div>
+					<div class="col-md-12 text-center visible-xs">
+						<h3>Obesity Medicine </h3>
+						<hr>
 					</div>
 					<div class="row">
 					<?php include('tabbed-content/obesity-medicine-content.php'); ?>
 					</div>
 				</div>
 				<div class="tab-pane" id="forms-content">
-					<div class="row">
-						<div class="col-xs-12 visible-xs show-xs-tabs-wrap">
-							<h2 class="show-xs-tabs">Forms </h2>
-						</div>
-						<div class="clear tall_20 visible-xs"></div>
+					<div class="col-md-12 text-center visible-xs">
+						<h3>Forms </h3>
+						<hr>
 					</div>
 					<div class="row">
 						<?php include('tabbed-content/forms-content.php'); ?>
 					</div>
 				</div>
 				<div class="tab-pane" id="corporate-program-content">
-					<div class="row">
-						<div class="col-xs-12 visible-xs show-xs-tabs-wrap">
-							<h2 class="show-xs-tabs">Corporate Program </h2>
-						</div>
-						<div class="clear tall_20 visible-xs"></div>
+					<div class="col-md-12 text-center visible-xs">
+						<h3>Corporate Program </h3>
+						<hr>
 					</div>
 					<div class="row">
 						<?php include('tabbed-content/corporate-program-content.php'); ?>
 					</div>
 				</div>
 				<div class="tab-pane" id="providers-content">
-					<div class="row">
-						<div class="col-xs-12 visible-xs show-xs-tabs-wrap">
-							<h2 class="show-xs-tabs">For Providers </h2>
-						</div>
-						<div class="clear tall_20 visible-xs"></div>
+					<div class="col-md-12 text-center visible-xs">
+						<h3>For Providers </h3>
+						<hr>
 					</div>
 					<div class="row">
 						<?php include('tabbed-content/providers-content.php'); ?>

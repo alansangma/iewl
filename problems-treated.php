@@ -52,66 +52,54 @@ include_once('./include/generic_head_bstp.php');
 
 			<div class="tab-content">
 				<div class="tab-pane" id="diabetes-insulin-resistance-content">
-					<div class="row">
-						<div class="col-xs-12 visible-xs show-xs-tabs-wrap">
-							<h2 class="show-xs-tabs">Diabetes Mellitus II / Insulin Resistance <i class="fa fa-caret-down"></i></h2>
-						</div>
-						<div class="clear tall_20 visible-xs"></div>
+					<div class="col-md-12 text-center visible-xs">
+						<h3>Diabetes</h3>
+						<hr>
 					</div>
 					<div class="row">
 					<?php include('tabbed-content/diabetes-insulin-resistance-content.php'); ?>
 					</div>
 				</div>
 				<div class="tab-pane" id="hypertension-content">
-					<div class="row">
-						<div class="col-xs-12 visible-xs show-xs-tabs-wrap">
-							<h2 class="show-xs-tabs">Hypertension <i class="fa fa-caret-down"></i></h2>
-						</div>
-						<div class="clear tall_20 visible-xs"></div>
+					<div class="col-md-12 text-center visible-xs">
+						<h3>Hypertension</h3>
+						<hr>
 					</div>
 					<div class="row">
 						<?php include('tabbed-content/hypertension-content.php'); ?>
 					</div>
 				</div>
 				<div class="tab-pane" id="osteoarthritis-content">
-					<div class="row">
-						<div class="col-xs-12 visible-xs show-xs-tabs-wrap">
-							<h2 class="show-xs-tabs">Osteoarthritis <i class="fa fa-caret-down"></i></h2>
-						</div>
-						<div class="clear tall_20 visible-xs"></div>
+					<div class="col-md-12 text-center visible-xs">
+						<h3>Osteoarthritis</h3>
+						<hr>
 					</div>
 					<div class="row">
 					<?php include('tabbed-content/osteoarthritis-content.php'); ?>
 					</div>
 				</div>
 				<div class="tab-pane" id="pcos-content">
-					<div class="row">
-						<div class="col-xs-12 visible-xs show-xs-tabs-wrap">
-							<h2 class="show-xs-tabs">PCOS <i class="fa fa-caret-down"></i></h2>
-						</div>
-						<div class="clear tall_20 visible-xs"></div>
+					<div class="col-md-12 text-center visible-xs">
+						<h3>PCOS</h3>
+						<hr>
 					</div>
 					<div class="row">
 					<?php include('tabbed-content/pcos-content.php'); ?>
 					</div>
 				</div>
 				<div class="tab-pane" id="pre-post-operative-management-content">
-					<div class="row">
-						<div class="col-xs-12 visible-xs show-xs-tabs-wrap">
-							<h2 class="show-xs-tabs">Pre/Post Operative Management <i class="fa fa-caret-down"></i></h2>
-						</div>
-						<div class="clear tall_20 visible-xs"></div>
+					<div class="col-md-12 text-center visible-xs">
+						<h3>Pre</h3>
+						<hr>
 					</div>
 					<div class="row">
 						<?php include('tabbed-content/pre-post-operative-management-content.php'); ?>
 					</div>
 				</div>
 				<div class="tab-pane" id="other-conditions-content">
-					<div class="row">
-						<div class="col-xs-12 visible-xs show-xs-tabs-wrap">
-							<h2 class="show-xs-tabs">Other Conditions <i class="fa fa-caret-down"></i></h2>
-						</div>
-						<div class="clear tall_20 visible-xs"></div>
+					<div class="col-md-12 text-center visible-xs">
+						<h3>Other</h3>
+						<hr>
 					</div>
 					<div class="row">
 						<?php include('tabbed-content/other-conditions-content.php'); ?>
