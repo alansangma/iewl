@@ -152,16 +152,20 @@ HOURS
       
       
     </div>
-    <div class="clear tall_40"></div>
-    <div class="row">
+    <!-- <div class="clear tall_40"></div> -->
+    <hr>
+    <div class="row text-center">
       <div class="clear tall_40 visible-sm visible-xs"></div>
       <div class="col-md-12 iewl-social">
         <h3>Our Social Network</h3>
         <ul>
-          <li><a href="http://www.facebook.com/pages/Inland-Empire-Weight-Loss/151698548219925" title="Like us on Facebook" target="_blank" class="facebook_home">Like us on Facebook!</a></li>
-          <li><a href="http://twitter.com/#!/InEmpWeightLoss" title="Follow us on Twitter!" class="twitter_home" target="_blank">Follow us on Twitter!</a></li>
-          <li><a href="http://inlandempireweightloss.tumblr.com" title="Follow us on Tumblr!" class="tumblr_home" target="_blank">Follow us on Tumblr!</a></li>
-          <li style="margin-right:0;"> <a href="http://youtu.be/4F-dx_z1Z4I" title="Watch us on YouTube" class="youtube_home" target="_blank">   </a></li>
+            <li><a href="http://www.facebook.com/pages/Inland-Empire-Weight-Loss/151698548219925" title="Like Inland Empire Weight Loss on Facebook" target="_blank"><i class="fa fa-facebook fa-2x"></i><br/><span class="hide-text">Like us on Facebook!</span></a></li>
+            <li><a href="http://twitter.com/#!/InEmpWeightLoss" title="Follow us on Twitter!" target="_blank"><i class="fa fa-twitter fa-2x"></i><span class="hide-text">Follow us on Twitter!</span></a></li>
+            <li><a href="http://www.yelp.com/biz/inland-empire-weight-loss-riverside" target="_blank" title="Review us on Yelp"><i class="fa fa-yelp fa-2x"></i><span class="hide-text">Reveiw us on Yelp!</span></a></li>
+            <li><a href="https://plus.google.com/104480320535500046323/posts" target="_blank" title="Review us on Google Plus"><i class="fa fa-google-plus fa-2x"></i><span class="hide-text">Google Plus</span></a></li>
+            <li><a href="https://local.yahoo.com/info-78612946-inland-empire-weight-loss-riverside" target="_blank" title="Review us on Yahoo!"><i class="fa fa-yahoo fa-2x"></i><span class="hide-text">Yahoo!</span></a></li>
+            <li><a href="http://inlandempireweightloss.tumblr.com" title="Follow us on Tumblr!" target="_blank"><i class="fa fa-tumblr fa-2x"></i><span class="hide-text">Follow us on Tumblr</span></a></li>
+          <li style="margin-right:0;"> <a href="http://youtu.be/4F-dx_z1Z4I" title="Watch us on YouTube" target="_blank"><i class="fa fa-youtube fa-2x"></i><span class="hide-text">Watch us on YouTube</span></a></li>
         </ul>
         
       </div>

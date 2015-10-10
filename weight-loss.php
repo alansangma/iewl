@@ -115,6 +115,15 @@ include_once('./include/generic_head_bstp.php');
 			</div>
 		</div>
 	</div>
+  
+  <!--////////////////////////////////////////-->
+  <!--               FOOTER                   -->
+  <?php
+  $is_footer = true;
+  include('./include/navigation_bstp.php');
+  ?>
+  <!--               FOOTER                   -->
+  <!--////////////////////////////////////////-->
 
 <!-- Google Code for WeightLossPage Conversion Page -->
 <script type="text/javascript">

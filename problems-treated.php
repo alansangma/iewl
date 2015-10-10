@@ -10,7 +10,7 @@ include_once('./include/generic_head_bstp.php');
 	<div class="container" id="main-container">
 		<div class="row">
 			<div class="col-md-12">
-				<h2 class="iewl-page-header">Weight Loss</h2>
+				<h2 class="iewl-page-header">Problems Treated</h2>
 			</div>
 		</div>
 
@@ -120,6 +120,15 @@ include_once('./include/generic_head_bstp.php');
 			</div>
 		</div>
 	</div>
+  
+  <!--////////////////////////////////////////-->
+  <!--               FOOTER                   -->
+  <?php
+  $is_footer = true;
+  include('./include/navigation_bstp.php');
+  ?>
+  <!--               FOOTER                   -->
+  <!--////////////////////////////////////////-->
 
 <!-- Google Code for WeightLossPage Conversion Page -->
 <script type="text/javascript">

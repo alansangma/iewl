@@ -381,3 +381,8 @@ body {
 .xs-tabs-enabled #tabs {
     display: block !important;
 }
+
+
+.hide-text {
+    display:none;
+}
